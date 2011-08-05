@@ -1,0 +1,29 @@
+body {
+	background: #f6f6f6 url(/images/body-bg-grid.gif) repeat 20%;
+	color: #181818;
+	font-family: Courier, monospace;
+	font-size: 100%;
+}
+
+#layout {
+	float: right;
+	width: 90%;
+}
+
+.half-width {
+	width: 49.4216614%;
+}
+
+// Move this
+.intro {
+	@extend .half-width;
+	font-size: 1.25em;
+	line-height: 1.45em;
+	margin-top: 0.8em;
+	position: relative;
+	z-index: 91;
+}
+
+::selection {
+	background-color: $highlightColor;
+}
