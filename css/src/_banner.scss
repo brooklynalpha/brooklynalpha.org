@@ -1,3 +1,13 @@
+[role='banner'] {
+	background: transparent url(/images/branding-large.png) no-repeat right top;
+	@include background-size('100%');
+	max-width: 1180px;
+	padding-top: 19%;
+	text-indent: -300em;
+	width: 98%;
+}
+
+/*
 header[role='banner'] {
 	
 	width: 100%;
@@ -35,7 +45,7 @@ header[role='banner'] {
 
 header[role='banner']:before {
 	background: transparent url(/images/banner-lyceum.png) no-repeat left top;
-	//@include background-size('100%');
+	@include background-size('100%');
 	content: " ";
 	display: block;
 	max-width: 747px;
@@ -46,3 +56,4 @@ header[role='banner']:before {
 	width: 48%;
 	z-index: 90;
 }
+*/

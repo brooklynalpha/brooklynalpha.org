@@ -1,4 +1,3 @@
 @import "compass/css3";
-$highlightColor: #e3ff61;
-
-@import "reset", "general", "banner", "nav", "footer";
+@import "reset", "fonts";
+@import "general", "banner", "intro", "nav", "footer";
