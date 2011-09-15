@@ -86,6 +86,7 @@ hr {
 
 body {
   background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
+  border-top: 14px solid #2e2e2e;
   color: #4d4d4d;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 100%;
@@ -132,19 +133,19 @@ a:hover {
   padding-left: 3.5416667%;
 }
 [role='main']:before {
-  background: transparent url(/images/buildings-large.png) no-repeat 19em center;
-  -moz-background-size: 140%;
-  -webkit-background-size: 140%;
-  -o-background-size: 140%;
-  background-size: 140%;
+  background: transparent url(/images/buildings-large.png) no-repeat 5em bottom;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
   content: " ";
   display: inline-block;
-  max-width: 885px;
-  padding-top: 76%;
+  max-width: 479px;
+  padding-top: 50%;
   position: absolute;
-  top: -10em;
+  top: 0;
   right: 0;
-  width: 75%;
+  width: 60%;
 }
 
 .intro {
