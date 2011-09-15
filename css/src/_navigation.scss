@@ -1,0 +1,17 @@
+[role='navigation'] {
+	border-top: 20px solid #2e2e2e;
+	border-bottom: 14px solid #2e2e2e;
+	
+	@include ostrichBlack(2.5em, 0.7em);
+	
+	padding: 16px 0 7px 0;
+	
+	li {
+		display: inline-block;
+	}
+	
+	a {
+		color: #2e2e2e;
+		text-decoration: none;
+	}
+}

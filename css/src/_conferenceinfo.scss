@@ -1,0 +1,16 @@
+#conferenceinfo {
+	h2 {
+		color: #d2ff00;
+		@include ostrichBlack(4.6em, 0.8em);
+	}
+	
+	h3 {
+		color: #757575;
+		@include ostrichMedium(2.5em, 0.8em);
+		letter-spacing: 0.372em;
+	}
+	
+	a {
+		display: none;
+	}
+}

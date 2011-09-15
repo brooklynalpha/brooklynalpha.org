@@ -1,7 +1,8 @@
 .intro {
-	color: #4d4d4d;
+	color: #757575;
 	@include rabiohead(2em);
+	margin-bottom: -0.2em;
 	position: relative;
-	top: -1em;
+	top: -1.25em;
 	width: 65.625%;
 }

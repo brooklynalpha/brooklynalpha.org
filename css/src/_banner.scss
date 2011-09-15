@@ -4,45 +4,10 @@
 	max-width: 1180px;
 	padding-top: 19%;
 	text-indent: -300em;
-	width: 98%;
+	width: 95%;
 }
 
 /*
-header[role='banner'] {
-	
-	width: 100%;
-	
-	h1 {
-		background: transparent url(/images/branding.png) no-repeat left top;
-		@include background-size('90%');
-		margin-bottom: -4.5%;
-		max-width: 1000px;
-		padding-top: 16%;
-		position: relative;
-		text-indent: -300em;
-		width: 100%;
-		z-index: 100;
-	}
-	
-	h2, h3 {
-		background-color: #424242;
-		color: #f8f8f8;
-		font-family: 'Ostrich Sans';
-		font-size: 3.5em;
-		-webkit-font-smoothing: antialiased;
-		font-weight: 800;
-		letter-spacing: 0.03em;
-		line-height: 0.76em;
-		padding: 0.15em 0 0 0.1em;
-	}
-	
-	h2 {
-		color: $highlightColor;
-		font-size: 2.8em;
-		margin-bottom: 0.15em;
-	}
-}
-
 header[role='banner']:before {
 	background: transparent url(/images/banner-lyceum.png) no-repeat left top;
 	@include background-size('100%');

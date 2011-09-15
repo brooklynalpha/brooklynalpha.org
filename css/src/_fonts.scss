@@ -15,7 +15,17 @@ $font-path: '/fonts' !default;
 }
 
 @include font-face('RabioheadRegular', 'rabiohead-webfont', 'RabioheadRegular');
+@include font-face('OstrichBlack', 'ostrich-black-webfont', 'OstrichSansBlack');
+@include font-face('OstrichMedium', 'ostrich-rounded-webfont', 'OstrichSansRoundedMedium');
 
 @mixin rabiohead($font-size, $line-height: 1em) {
 	font: #{$font-size}/#{$line-height} 'RabioheadRegular', helvetica, arial , sans-serif;
+}
+
+@mixin ostrichBlack($font-size, $line-height: 1em) {
+	font: #{$font-size}/#{$line-height} 'OstrichBlack', helvetica, arial , sans-serif;
+}
+
+@mixin ostrichMedium($font-size, $line-height: 1em) {
+	font: #{$font-size}/#{$line-height} 'OstrichMedium', helvetica, arial , sans-serif;
 }
