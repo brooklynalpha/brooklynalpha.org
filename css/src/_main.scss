@@ -1,3 +1,16 @@
 [role='main'] {
-	padding-left: 03.5416667%;
+	padding-left: 3.5416667%;
+	
+	&:before {
+		background: transparent url(/images/buildings-large.png) no-repeat 20em -8em;
+		@include background-size('140%');
+		content: " ";
+		display: inline-block;
+		max-width: 885px;
+		padding-top: 76%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+	}
 }

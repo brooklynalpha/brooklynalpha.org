@@ -1,16 +1,53 @@
 #conferenceinfo {
+	
+	position: relative;
+	
 	h2 {
 		color: #d2ff00;
 		@include ostrichBlack(4.8em, 0.8em);
+		width: 57.2916667%;
 	}
 	
 	h3 {
 		color: #757575;
 		@include ostrichMedium(2.531em, 0.8em);
 		letter-spacing: 0.38em;
+		text-indent: 0.05em;
+		width: 57.2916667%;
 	}
 	
 	a {
-		display: none;
+		background: transparent url(/images/register-btn.png) no-repeat center;
+		color: #262626;
+		display: block;
+		@include ostrichBlack(2em);
+		height: 133px;
+		position: absolute;
+		left: 57.2916667%;
+		text-align: center;
+		top: -0.8em;
+		@include rotate(8deg);
+		width: 133px;
+		
+		&:hover {
+			text-decoration: none;
+			@include rotate(2deg);
+		}
+		
+		b {
+			border-bottom: 4px solid #262626;
+			display: inline-block;
+			line-height: 0.8em;
+			margin-top: 1.4em;
+			font-weight: normal;
+			@include text-shadow(rgba(255, 255, 255, 0.8), 1px, 1px, 1px);
+		}
+		
+		i {
+			color: #666;
+			display: block;
+			@include rabiohead(0.8em);
+			margin-top: 0.2em;
+		}
 	}
 }

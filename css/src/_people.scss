@@ -9,7 +9,7 @@
 		@include border-radius(1px);
 		@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
 		display: inline-block;
-		margin: 1.8em 2.0416667% 0 0;
+		margin: 1.2em 2.0416667% 0 0;
 		position: relative;
 		@include rotate(-0.4deg);
 		vertical-align: top;
@@ -17,11 +17,19 @@
 		
 		&:nth-child(2n) {
 			@include rotate(0.1deg);
+			
+			&:before {
+				@include rotate(-2deg);
+			}
 		}
 		
 		&:nth-child(3n) {
 			margin-right: 0;
 			@include rotate(0.5deg);
+			
+			&:before {
+				@include rotate(25deg);
+			}
 		}
 		
 		&:before {
@@ -32,12 +40,14 @@
 			left: 40%;
 			position: absolute;
 			top: -12px;
+			@include rotate(8deg);
 			width: 47px;			
 		}
 		
 		p {
 			float: left;
 			font-size: 0.75em;
+			overflow: hidden;
 			padding: 0 0 3% 3%;
 		}
 	}

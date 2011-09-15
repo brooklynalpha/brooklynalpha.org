@@ -3,22 +3,8 @@
 	@include background-size('100%');
 	max-width: 1180px;
 	padding-top: 19%;
+	position: relative;
 	text-indent: -300em;
 	width: 95%;
-}
-
-/*
-header[role='banner']:before {
-	background: transparent url(/images/banner-lyceum.png) no-repeat left top;
-	@include background-size('100%');
-	content: " ";
-	display: block;
-	max-width: 747px;
-	position: absolute;
-	right: 0;
-	margin-top: 8%;
-	height: 449px;
-	width: 48%;
 	z-index: 90;
 }
-*/
