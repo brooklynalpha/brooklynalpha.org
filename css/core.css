@@ -132,21 +132,6 @@ a:hover {
 [role='main'] {
   padding-left: 3.5416667%;
 }
-[role='main']:before {
-  background: transparent url(/images/buildings-large.png) no-repeat 5em bottom;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  content: " ";
-  display: inline-block;
-  max-width: 479px;
-  padding-top: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%;
-}
 
 .intro {
   color: #757575;
@@ -154,7 +139,7 @@ a:hover {
   margin-bottom: -0.2em;
   position: relative;
   top: -1.25em;
-  width: 57.2916667%;
+  width: 63.625%;
 }
 
 #conferenceinfo {
@@ -211,6 +196,21 @@ a:hover {
   font: 0.8em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   margin-top: 0.2em;
 }
+#conferenceinfo:before {
+  background: transparent url(/images/buildings-large.png) no-repeat 5em -2em;
+  -moz-background-size: 110%;
+  -webkit-background-size: 110%;
+  -o-background-size: 110%;
+  background-size: 110%;
+  content: " ";
+  display: inline-block;
+  height: 500px;
+  max-width: 479px;
+  position: absolute;
+  top: -15em;
+  right: 0;
+  width: 100%;
+}
 
 [role='navigation'] {
   border-top: 20px solid #2e2e2e;
@@ -219,41 +219,32 @@ a:hover {
   padding: 12px 0 2px 0;
 }
 [role='navigation'] ul {
+  overflow: hidden;
   position: relative;
-  width: 57.2916667%;
+  width: 54.2916667%;
   z-index: 95;
 }
 [role='navigation'] li {
   display: inline-block;
   line-height: 1em;
-  padding-right: 0.53em;
-}
-[role='navigation'] li:after {
-  background-color: #2e2e2e;
-  content: " ";
-  display: inline-block;
-  height: 12px;
+  margin-right: auto;
   position: relative;
-  top: -0.22em;
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 12px;
+  text-align: right;
+  width: 36.1515152%;
+}
+[role='navigation'] li:first-child {
+  text-align: left;
+  width: 30.1515152%;
 }
 [role='navigation'] li:last-child {
-  padding-right: 0;
-}
-[role='navigation'] li:last-child:after {
-  content: "";
-  height: 0;
-  width: 0;
+  position: absolute;
+  right: 0;
+  width: 25.1515152%;
 }
 [role='navigation'] a {
   color: #2e2e2e;
-  margin-right: 0.7em;
   text-decoration: none;
+  width: 100%;
 }
 [role='navigation'] a:hover {
   color: #494949;

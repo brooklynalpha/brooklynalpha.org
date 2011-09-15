@@ -50,4 +50,18 @@
 			margin-top: 0.2em;
 		}
 	}
+	
+	&:before {
+		background: transparent url(/images/buildings-large.png) no-repeat 5em -2em;
+		@include background-size('110%');
+		content: " ";
+		display: inline-block;
+		height: 500px;
+		max-width: 479px;
+		//padding-top: 50%;
+		position: absolute;
+		top: -15em;
+		right: 0;
+		width: 100%;
+	}
 }

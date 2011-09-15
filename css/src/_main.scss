@@ -1,18 +1,3 @@
 [role='main'] {
-	padding-left: 3.5416667%;
-	
-	&:before {
-		background: transparent url(/images/buildings-large.png) no-repeat 5em bottom;
-		@include background-size('100%');
-		content: " ";
-		display: inline-block;
-		//height: 477px;
-		max-width: 479px;
-		padding-top: 50%;
-		position: absolute;
-		//top: 15%;
-		top: 0;
-		right: 0;
-		width: 60%;
-	}	
+	padding-left: 3.5416667%;	
 }
