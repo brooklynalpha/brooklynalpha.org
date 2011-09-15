@@ -132,7 +132,7 @@ a:hover {
   padding-left: 3.5416667%;
 }
 [role='main']:before {
-  background: transparent url(/images/buildings-large.png) no-repeat 20em -8em;
+  background: transparent url(/images/buildings-large.png) no-repeat 19em center;
   -moz-background-size: 140%;
   -webkit-background-size: 140%;
   -o-background-size: 140%;
@@ -142,9 +142,9 @@ a:hover {
   max-width: 885px;
   padding-top: 76%;
   position: absolute;
-  top: 0;
+  top: -10em;
   right: 0;
-  width: 70%;
+  width: 75%;
 }
 
 .intro {
@@ -153,7 +153,7 @@ a:hover {
   margin-bottom: -0.2em;
   position: relative;
   top: -1.25em;
-  width: 65.625%;
+  width: 57.2916667%;
 }
 
 #conferenceinfo {
@@ -218,7 +218,9 @@ a:hover {
   padding: 12px 0 2px 0;
 }
 [role='navigation'] ul {
+  position: relative;
   width: 57.2916667%;
+  z-index: 95;
 }
 [role='navigation'] li {
   display: inline-block;

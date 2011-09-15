@@ -2,15 +2,15 @@
 	padding-left: 3.5416667%;
 	
 	&:before {
-		background: transparent url(/images/buildings-large.png) no-repeat 20em -8em;
+		background: transparent url(/images/buildings-large.png) no-repeat 19em center;
 		@include background-size('140%');
 		content: " ";
 		display: inline-block;
 		max-width: 885px;
 		padding-top: 76%;
 		position: absolute;
-		top: 0;
+		top: -10em;
 		right: 0;
-		width: 70%;
+		width: 75%;
 	}
 }

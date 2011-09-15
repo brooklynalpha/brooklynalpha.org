@@ -1,19 +1,20 @@
 [role='navigation'] {
 	border-top: 20px solid #2e2e2e;
 	border-bottom: 14px solid #2e2e2e;
-	
 	@include ostrichBlack(2.75em, 0.7em);
-	
 	padding: 12px 0 2px 0;
 	
 	ul {
+		position: relative;
 		width: 57.2916667%;
+		z-index: 95;
 	}
 	
 	li {
 		display: inline-block;
 		line-height: 1em;
 		padding-right: 0.53em;
+		//width: 31.1515152%;
 		
 		&:after {
 			background-color: #2e2e2e;
@@ -44,6 +45,6 @@
 		
 		&:hover {
 			color: #494949;
-		}
+		}		
 	}
 }
