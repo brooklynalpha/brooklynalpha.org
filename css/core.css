@@ -1,8 +1,8 @@
+/* ----- Compiled using Sass/Compass ------ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 18, src/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,47 +24,38 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-/* line 28, src/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 31, src/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 34, src/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 37, src/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 41, src/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 45, src/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 50, src/_reset.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 54, src/_reset.scss */
 hr {
   display: none;
 }
@@ -93,7 +84,6 @@ hr {
   font-style: normal;
 }
 
-/* line 1, src/_general.scss */
 body {
   background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
   color: #4d4d4d;
@@ -101,35 +91,29 @@ body {
   font-size: 100%;
 }
 
-/* line 8, src/_general.scss */
 -moz-::selection {
   background-color: #d2ff00;
   color: #000;
 }
 
-/* line 13, src/_general.scss */
 ::selection {
   background-color: #d2ff00;
   color: #000;
 }
 
-/* line 18, src/_general.scss */
 #layout {
   float: right;
   width: 94%;
 }
 
-/* line 23, src/_general.scss */
 a {
   color: #275dad;
   text-decoration: none;
 }
-/* line 27, src/_general.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 1, src/_banner.scss */
 [role='banner'] {
   background: transparent url(/images/branding-large.png) no-repeat right top;
   -moz-background-size: 100%;
@@ -157,12 +141,10 @@ header[role='banner']:before {
 	z-index: 90;
 }
 */
-/* line 1, src/_main.scss */
 [role='main'] {
   padding-left: 03.5416667%;
 }
 
-/* line 1, src/_intro.scss */
 .intro {
   color: #757575;
   font: 2em/1em "RabioheadRegular", helvetica, arial, sans-serif;
@@ -172,36 +154,30 @@ header[role='banner']:before {
   width: 65.625%;
 }
 
-/* line 2, src/_conferenceinfo.scss */
 #conferenceinfo h2 {
   color: #d2ff00;
   font: 4.8em/0.8em "OstrichBlack", helvetica, arial, sans-serif;
 }
-/* line 7, src/_conferenceinfo.scss */
 #conferenceinfo h3 {
   color: #757575;
   font: 2.531em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
   letter-spacing: 0.38em;
 }
-/* line 13, src/_conferenceinfo.scss */
 #conferenceinfo a {
   display: none;
 }
 
-/* line 1, src/_navigation.scss */
 [role='navigation'] {
   border-top: 20px solid #2e2e2e;
   border-bottom: 14px solid #2e2e2e;
   font: 2.75em/0.7em "OstrichBlack", helvetica, arial, sans-serif;
   padding: 12px 0 2px 0;
 }
-/* line 9, src/_navigation.scss */
 [role='navigation'] li {
   display: inline-block;
   line-height: 1em;
   padding-right: 0.53em;
 }
-/* line 14, src/_navigation.scss */
 [role='navigation'] li:after {
   background-color: #2e2e2e;
   content: " ";
@@ -216,45 +192,107 @@ header[role='banner']:before {
   transform: rotate(45deg);
   width: 12px;
 }
-/* line 25, src/_navigation.scss */
 [role='navigation'] li:last-child {
   padding-right: 0;
 }
-/* line 28, src/_navigation.scss */
 [role='navigation'] li:last-child:after {
   content: "";
   height: 0;
   width: 0;
 }
-/* line 36, src/_navigation.scss */
 [role='navigation'] a {
   color: #2e2e2e;
   margin-right: 0.7em;
   text-decoration: none;
 }
-/* line 41, src/_navigation.scss */
 [role='navigation'] a:hover {
   color: #494949;
 }
 
-/* line 1, src/_sections.scss */
 section {
   border-bottom: 14px solid #2e2e2e;
   margin: 4em 0 0.5em 0;
+  padding-bottom: 1.4em;
 }
-/* line 5, src/_sections.scss */
 section h1 {
   color: #2e2e2e;
   font: 2.8em/1em "OstrichBlack", helvetica, arial, sans-serif;
 }
-/* line 10, src/_sections.scss */
 section p {
   line-height: 1.4em;
   width: 65.625%;
 }
 
-/* line 1, src/_contentinfo.scss */
 [role="contentinfo"] {
   font: 1.6em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   padding-bottom: 1.4em;
+}
+
+.people ul {
+  width: 90%;
+}
+.people li {
+  background-color: #fff;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 1.8em 2.0416667% 0 0;
+  position: relative;
+  -moz-transform: rotate(-0.4deg);
+  -webkit-transform: rotate(-0.4deg);
+  -o-transform: rotate(-0.4deg);
+  -ms-transform: rotate(-0.4deg);
+  transform: rotate(-0.4deg);
+  vertical-align: top;
+  width: 31.2916667%;
+}
+.people li:nth-child(2n) {
+  -moz-transform: rotate(0.1deg);
+  -webkit-transform: rotate(0.1deg);
+  -o-transform: rotate(0.1deg);
+  -ms-transform: rotate(0.1deg);
+  transform: rotate(0.1deg);
+}
+.people li:nth-child(3n) {
+  margin-right: 0;
+  -moz-transform: rotate(0.5deg);
+  -webkit-transform: rotate(0.5deg);
+  -o-transform: rotate(0.5deg);
+  -ms-transform: rotate(0.5deg);
+  transform: rotate(0.5deg);
+}
+.people li:before {
+  background: transparent url(/images/people-tape.png) no-repeat left top;
+  content: " ";
+  display: inline-block;
+  height: 25px;
+  left: 40%;
+  position: absolute;
+  top: -12px;
+  width: 47px;
+}
+.people li p {
+  float: left;
+  font-size: 0.75em;
+  padding: 0 0 3% 3%;
+}
+.people img {
+  display: inline-block;
+  float: left;
+  margin: 3% 2% 3% 3%;
+}
+.people img + a {
+  display: inline-block;
+  float: left;
+  font: 1.6em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  margin-top: 3%;
+  padding-left: 3%;
 }
