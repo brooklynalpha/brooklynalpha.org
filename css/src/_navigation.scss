@@ -16,7 +16,7 @@
 		line-height: 1em;
 		margin-right: auto;
 		position: relative;
-		text-align: right;
+		text-align: center;
 		width: 36.1515152%;
 		
 		&:first-child {
@@ -27,6 +27,7 @@
 		&:last-child {
 			position: absolute;
 			right: 0;
+			text-align: right;
 			width: 25.1515152%;
 		}
 	}

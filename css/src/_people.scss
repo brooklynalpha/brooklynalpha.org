@@ -21,6 +21,10 @@
 			&:before {
 				@include rotate(-2deg);
 			}
+			
+			p {
+				@include rotate(-0.1deg);
+			}
 		}
 		
 		&:nth-child(3n) {
@@ -29,6 +33,10 @@
 			
 			&:before {
 				@include rotate(25deg);
+			}
+			
+			p {
+				@include rotate(-0.5deg);
 			}
 		}
 		
@@ -49,6 +57,7 @@
 			font-size: 0.75em;
 			overflow: hidden;
 			padding: 0 0 3% 3%;
+			@include rotate(0.4deg);
 		}
 	}
 	

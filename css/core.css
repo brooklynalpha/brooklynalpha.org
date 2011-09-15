@@ -229,7 +229,7 @@ a:hover {
   line-height: 1em;
   margin-right: auto;
   position: relative;
-  text-align: right;
+  text-align: center;
   width: 36.1515152%;
 }
 [role='navigation'] li:first-child {
@@ -239,6 +239,7 @@ a:hover {
 [role='navigation'] li:last-child {
   position: absolute;
   right: 0;
+  text-align: right;
   width: 25.1515152%;
 }
 [role='navigation'] a {
@@ -309,6 +310,13 @@ section p {
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
+.people li:nth-child(2n) p {
+  -moz-transform: rotate(-0.1deg);
+  -webkit-transform: rotate(-0.1deg);
+  -o-transform: rotate(-0.1deg);
+  -ms-transform: rotate(-0.1deg);
+  transform: rotate(-0.1deg);
+}
 .people li:nth-child(3n) {
   margin-right: 0;
   -moz-transform: rotate(0.5deg);
@@ -323,6 +331,13 @@ section p {
   -o-transform: rotate(25deg);
   -ms-transform: rotate(25deg);
   transform: rotate(25deg);
+}
+.people li:nth-child(3n) p {
+  -moz-transform: rotate(-0.5deg);
+  -webkit-transform: rotate(-0.5deg);
+  -o-transform: rotate(-0.5deg);
+  -ms-transform: rotate(-0.5deg);
+  transform: rotate(-0.5deg);
 }
 .people li:before {
   background: transparent url(/images/people-tape.png) no-repeat left top;
@@ -344,6 +359,11 @@ section p {
   font-size: 0.75em;
   overflow: hidden;
   padding: 0 0 3% 3%;
+  -moz-transform: rotate(0.4deg);
+  -webkit-transform: rotate(0.4deg);
+  -o-transform: rotate(0.4deg);
+  -ms-transform: rotate(0.4deg);
+  transform: rotate(0.4deg);
 }
 .people img {
   display: inline-block;
