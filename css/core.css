@@ -116,7 +116,17 @@ body {
 /* line 18, src/_general.scss */
 #layout {
   float: right;
-  width: 90%;
+  width: 94%;
+}
+
+/* line 23, src/_general.scss */
+a {
+  color: #275dad;
+  text-decoration: none;
+}
+/* line 27, src/_general.scss */
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 1, src/_banner.scss */
@@ -165,13 +175,13 @@ header[role='banner']:before {
 /* line 2, src/_conferenceinfo.scss */
 #conferenceinfo h2 {
   color: #d2ff00;
-  font: 4.6em/0.8em "OstrichBlack", helvetica, arial, sans-serif;
+  font: 4.8em/0.8em "OstrichBlack", helvetica, arial, sans-serif;
 }
 /* line 7, src/_conferenceinfo.scss */
 #conferenceinfo h3 {
   color: #757575;
-  font: 2.5em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
-  letter-spacing: 0.372em;
+  font: 2.531em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
+  letter-spacing: 0.38em;
 }
 /* line 13, src/_conferenceinfo.scss */
 #conferenceinfo a {
@@ -182,36 +192,69 @@ header[role='banner']:before {
 [role='navigation'] {
   border-top: 20px solid #2e2e2e;
   border-bottom: 14px solid #2e2e2e;
-  font: 2.5em/0.7em "OstrichBlack", helvetica, arial, sans-serif;
-  padding: 16px 0 7px 0;
+  font: 2.75em/0.7em "OstrichBlack", helvetica, arial, sans-serif;
+  padding: 12px 0 2px 0;
 }
 /* line 9, src/_navigation.scss */
 [role='navigation'] li {
   display: inline-block;
+  line-height: 1em;
+  padding-right: 0.53em;
 }
-/* line 13, src/_navigation.scss */
+/* line 14, src/_navigation.scss */
+[role='navigation'] li:after {
+  background-color: #2e2e2e;
+  content: " ";
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: -0.22em;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 12px;
+}
+/* line 25, src/_navigation.scss */
+[role='navigation'] li:last-child {
+  padding-right: 0;
+}
+/* line 28, src/_navigation.scss */
+[role='navigation'] li:last-child:after {
+  content: "";
+  height: 0;
+  width: 0;
+}
+/* line 36, src/_navigation.scss */
 [role='navigation'] a {
   color: #2e2e2e;
+  margin-right: 0.7em;
   text-decoration: none;
 }
-
-/*
-footer[role="contentinfo"] {
-	
-	margin-top: 1.2em;
-	
-	div {
-		color: #f8f8f8;
-		background-color: #424242;
-		padding: 0.4em 0.6em;
-	}
-	
-	h1 {
-		font-family: 'Ostrich Sans';
-		font-size: 2.2em;
-		-webkit-font-smoothing: antialiased;
-		font-weight: 800;
-		letter-spacing: 0.03em;
-	}
+/* line 41, src/_navigation.scss */
+[role='navigation'] a:hover {
+  color: #494949;
 }
-*/
+
+/* line 1, src/_sections.scss */
+section {
+  border-bottom: 14px solid #2e2e2e;
+  margin: 4em 0 0.5em 0;
+}
+/* line 5, src/_sections.scss */
+section h1 {
+  color: #2e2e2e;
+  font: 2.8em/1em "OstrichBlack", helvetica, arial, sans-serif;
+}
+/* line 10, src/_sections.scss */
+section p {
+  line-height: 1.4em;
+  width: 65.625%;
+}
+
+/* line 1, src/_contentinfo.scss */
+[role="contentinfo"] {
+  font: 1.6em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  padding-bottom: 1.4em;
+}

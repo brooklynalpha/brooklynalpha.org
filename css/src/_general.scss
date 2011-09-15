@@ -17,7 +17,16 @@ body {
 
 #layout {
 	float: right;
-	width: 90%;
+	width: 94%;
+}
+
+a {
+	color: #275dad;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 /*

@@ -2,16 +2,44 @@
 	border-top: 20px solid #2e2e2e;
 	border-bottom: 14px solid #2e2e2e;
 	
-	@include ostrichBlack(2.5em, 0.7em);
+	@include ostrichBlack(2.75em, 0.7em);
 	
-	padding: 16px 0 7px 0;
+	padding: 12px 0 2px 0;
 	
 	li {
 		display: inline-block;
+		line-height: 1em;
+		padding-right: 0.53em;
+		
+		&:after {
+			background-color: #2e2e2e;
+			content: " ";
+			display: inline-block;
+			height: 12px;
+			position: relative;
+			top: -0.22em;
+			@include rotate(45deg);
+			width: 12px;
+		}
+		
+		&:last-child {
+			padding-right: 0;
+			
+			&:after {
+				content: "";
+				height: 0;
+				width: 0;
+			}
+		}
 	}
 	
 	a {
 		color: #2e2e2e;
+		margin-right: 0.7em;
 		text-decoration: none;
+		
+		&:hover {
+			color: #494949;
+		}
 	}
 }

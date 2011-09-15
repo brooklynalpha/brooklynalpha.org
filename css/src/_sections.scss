@@ -1,0 +1,14 @@
+section {
+	border-bottom: 14px solid #2e2e2e;
+	margin: 4em 0 0.5em 0;
+	
+	h1 {
+		color: #2e2e2e;
+		@include ostrichBlack(2.8em);
+	}
+	
+	p {
+		line-height: 1.4em;
+		width: 65.625%;
+	}
+}
