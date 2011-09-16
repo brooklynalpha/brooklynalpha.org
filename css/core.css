@@ -140,6 +140,7 @@ a:hover {
   position: relative;
   top: -1.25em;
   width: 63.625%;
+  z-index: 99;
 }
 
 #conferenceinfo {
@@ -198,10 +199,10 @@ a:hover {
 }
 #conferenceinfo:before {
   background: transparent url(/images/buildings-large.png) no-repeat 5em -2em;
-  -moz-background-size: 110%;
-  -webkit-background-size: 110%;
-  -o-background-size: 110%;
-  background-size: 110%;
+  -moz-background-size: 105%;
+  -webkit-background-size: 105%;
+  -o-background-size: 105%;
+  background-size: 105%;
   content: " ";
   display: inline-block;
   height: 500px;
