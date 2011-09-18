@@ -102,7 +102,7 @@ body {
   color: #000;
 }
 
-#layout {
+body > div {
   float: right;
   width: 94%;
 }
@@ -115,7 +115,33 @@ a:hover {
   text-decoration: underline;
 }
 
-[role='banner'] {
+[role='banner'] > a {
+  display: inline-block;
+  max-width: 310px;
+  width: 32.2916667%;
+}
+[role='banner'] > a:hover {
+  text-decoration: none;
+}
+[role='banner'] h1 {
+  background: transparent url(/images/branding-small.png) no-repeat left top;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  padding-top: 18%;
+  text-indent: -300em;
+}
+[role='banner'] h2 {
+  color: #393939;
+  font: 1.4em/0.9em "OstrichMedium", helvetica, arial, sans-serif;
+  letter-spacing: 0.4em;
+  margin-left: 4.1935484%;
+  margin-top: -0.75em;
+  width: 92%;
+}
+
+#home [role='banner'] {
   background: transparent url(/images/branding-large.png) no-repeat right top;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;

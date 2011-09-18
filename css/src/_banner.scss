@@ -1,4 +1,33 @@
 [role='banner'] {
+	
+	& > a {
+		display: inline-block;
+		max-width: 310px;
+		width: 32.2916667%;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	h1 {
+		background: transparent url(/images/branding-small.png) no-repeat left top;
+		@include background-size('100%');
+		padding-top: 18%;
+		text-indent: -300em;
+	}
+	
+	h2 {		
+		color: #393939;
+		@include ostrichMedium(1.4em, 0.9em);
+		letter-spacing: 0.4em;
+		margin-left: 4.1935484%;
+		margin-top: -0.75em;
+		width: 92%;
+	}
+}
+
+#home [role='banner'] {
 	background: transparent url(/images/branding-large.png) no-repeat right top;
 	@include background-size('100%');
 	max-width: 1180px;
