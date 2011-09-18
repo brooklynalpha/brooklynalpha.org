@@ -129,7 +129,7 @@ a:hover {
   z-index: 90;
 }
 
-[role='main'] {
+#home [role='main'] {
   padding-left: 3.5416667%;
 }
 
