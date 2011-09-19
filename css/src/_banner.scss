@@ -1,7 +1,11 @@
 [role='banner'] {
 	
+	border-bottom: 14px solid #2e2e2e;
+	overflow: hidden;
+		
 	& > a {
 		display: inline-block;
+		float: left;
 		max-width: 310px;
 		width: 32.2916667%;
 		
@@ -30,6 +34,7 @@
 #home [role='banner'] {
 	background: transparent url(/images/branding-large.png) no-repeat right top;
 	@include background-size('100%');
+	border-bottom: 0;
 	max-width: 1180px;
 	padding-top: 19%;
 	position: relative;
