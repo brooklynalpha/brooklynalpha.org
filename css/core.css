@@ -544,10 +544,12 @@ section.alt > div p {
 #location > div {
   background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
 }
+#location section {
+  padding-top: 20px;
+}
 
 .location {
   margin: 2em 0 0.5em 0;
-  padding-top: 20px;
 }
 .location h2 {
   font: 1.45em/1em "RabioheadRegular", helvetica, arial, sans-serif;
@@ -654,6 +656,22 @@ section.alt > div p {
   display: block;
   margin: 0 auto;
   width: 97%;
+}
+.directions div:last-child:before {
+  background: transparent url(/images/people-tape.png) no-repeat left top;
+  content: " ";
+  display: inline-block;
+  height: 25px;
+  left: 45%;
+  position: absolute;
+  top: -10px;
+  -moz-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  width: 47px;
+  z-index: 2;
 }
 
 @-webkit-keyframes slideOne {

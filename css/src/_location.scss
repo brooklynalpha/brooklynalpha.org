@@ -1,11 +1,17 @@
-#location > div {
-	background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
+#location {
+	
+	& > div {
+		background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
+	}
+	
+	section {
+		padding-top: 20px;
+	}
 }
 
 .location {
 	
 	margin: 2em 0 0.5em 0;
-	padding-top: 20px;
 	
 	h2 {
 		@include rabiohead(1.45em);
@@ -98,6 +104,19 @@
 		display: block;
 		margin: 0 auto;
 		width: 97%;
+	}
+	
+	&:before {
+		background: transparent url(/images/people-tape.png) no-repeat left top;
+		content: " ";
+		display: inline-block;
+		height: 25px;
+		left: 45%;
+		position: absolute;
+		top: -10px;
+		@include rotate(8deg);
+		width: 47px;
+		z-index: 2;		
 	}
 }
 
