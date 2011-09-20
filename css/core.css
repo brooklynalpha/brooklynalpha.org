@@ -594,6 +594,8 @@ section.alt > div p {
   z-index: 2;
 }
 .location li {
+  -webkit-animation-duration: 24s;
+  -webkit-animation-iteration-count: infinite;
   left: 1.6%;
   margin: 0 auto;
   opacity: 0;
@@ -602,23 +604,23 @@ section.alt > div p {
   width: 97%;
 }
 .location li:first-child {
-  -webkit-animation: slideOne 24s infinite;
+  -webkit-animation-name: slideOne;
   opacity: 1;
 }
 .location li:nth-of-type(2) {
-  -webkit-animation: slideTwo 24s infinite;
+  -webkit-animation-name: slideTwo;
 }
 .location li:nth-of-type(3) {
-  -webkit-animation: slideThree 24s infinite;
+  -webkit-animation-name: slideThree;
 }
 .location li:nth-of-type(4) {
-  -webkit-animation: slideFour 24s infinite;
+  -webkit-animation-name: slideFour;
 }
 .location li:nth-of-type(5) {
-  -webkit-animation: slideFive 24s infinite;
+  -webkit-animation-name: slideFive;
 }
 .location li:nth-of-type(6) {
-  -webkit-animation: slideSix 24s infinite;
+  -webkit-animation-name: slideSix;
 }
 .location img {
   width: 100%;
