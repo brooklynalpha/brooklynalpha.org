@@ -1,0 +1,53 @@
+.location {
+	
+	margin: 2em 0 0.5em 0;
+	padding-top: 20px;
+	
+	h2 {
+		@include rabiohead(1.45em);
+		margin: -0.4em 0 0.4em 0;
+	}
+	
+	ul {
+		background-color: #fff;
+		@include border-radius(1px);
+		@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
+		display: inline-block;
+		float: left;
+		margin-left: .95641026%;
+		padding-top: 26.5%;
+		position: relative;
+		@include rotate(-0.2deg);
+		width: 39.625%;
+		
+		&:before {
+			background: transparent url(/images/people-tape.png) no-repeat left top;
+			content: " ";
+			display: inline-block;
+			height: 25px;
+			left: 45%;
+			position: absolute;
+			top: -10px;
+			@include rotate(8deg);
+			width: 47px;
+			z-index: 2;		
+		}
+	}
+	
+	li {
+		left: 1.6%;
+		margin: 0 auto;
+		opacity: 0;
+		position: absolute;
+		top: 1.7%;
+		width: 97%;
+	}
+	
+	li:first-child {
+		opacity: 1;
+	}
+	
+	img {
+		width: 100%;
+	}
+}

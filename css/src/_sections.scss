@@ -1,15 +1,38 @@
 section {
 	border-bottom: 14px solid #2e2e2e;
 	margin: 4em 0 0.5em 0;
+	overflow: hidden;
 	padding-bottom: 1.4em;
 	
 	h1 {
 		color: #2e2e2e;
-		@include ostrichBlack(2.8em);
+		@include ostrichBlack(2.8em, 1em);
 	}
 	
 	p {
+		font-size: 0.9em;
 		line-height: 1.4em;
+		width: 90%;
+	}
+	
+	& > div {
+		padding-top: 0.8em;
+		float: right;
+		width: 57.2916667%;
+	}
+	
+	&.alt > div {
+		float: left;
+		text-align: right;
+		
+		p {
+			float: right;
+		}
+	}
+}
+
+#home section {
+	p {
 		width: 65.625%;
 	}
 }

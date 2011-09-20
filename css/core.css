@@ -366,6 +366,7 @@ a:hover {
 section {
   border-bottom: 14px solid #2e2e2e;
   margin: 4em 0 0.5em 0;
+  overflow: hidden;
   padding-bottom: 1.4em;
 }
 section h1 {
@@ -373,7 +374,24 @@ section h1 {
   font: 2.8em/1em "OstrichBlack", helvetica, arial, sans-serif;
 }
 section p {
+  font-size: 0.9em;
   line-height: 1.4em;
+  width: 90%;
+}
+section > div {
+  padding-top: 0.8em;
+  float: right;
+  width: 57.2916667%;
+}
+section.alt > div {
+  float: left;
+  text-align: right;
+}
+section.alt > div p {
+  float: right;
+}
+
+#home section p {
   width: 65.625%;
 }
 
@@ -516,4 +534,67 @@ section p {
   border: 1px solid #c7c7c7;
   display: block;
   width: 99.3548387%;
+}
+
+.location {
+  margin: 2em 0 0.5em 0;
+  padding-top: 20px;
+}
+.location h2 {
+  font: 1.45em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  margin: -0.4em 0 0.4em 0;
+}
+.location ul {
+  background-color: #fff;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  float: left;
+  margin-left: .95641026%;
+  padding-top: 26.5%;
+  position: relative;
+  -moz-transform: rotate(-0.2deg);
+  -webkit-transform: rotate(-0.2deg);
+  -o-transform: rotate(-0.2deg);
+  -ms-transform: rotate(-0.2deg);
+  transform: rotate(-0.2deg);
+  width: 39.625%;
+}
+.location ul:before {
+  background: transparent url(/images/people-tape.png) no-repeat left top;
+  content: " ";
+  display: inline-block;
+  height: 25px;
+  left: 45%;
+  position: absolute;
+  top: -10px;
+  -moz-transform: rotate(8deg);
+  -webkit-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  width: 47px;
+  z-index: 2;
+}
+.location li {
+  left: 1.6%;
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  top: 1.7%;
+  width: 97%;
+}
+.location li:first-child {
+  opacity: 1;
+}
+.location img {
+  width: 100%;
 }
