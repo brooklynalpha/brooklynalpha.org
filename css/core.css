@@ -561,11 +561,11 @@ section.alt > div p {
   margin-left: .95641026%;
   padding-top: 26.5%;
   position: relative;
-  -moz-transform: rotate(-0.2deg);
-  -webkit-transform: rotate(-0.2deg);
-  -o-transform: rotate(-0.2deg);
-  -ms-transform: rotate(-0.2deg);
-  transform: rotate(-0.2deg);
+  -moz-transform: rotate(-0.4deg);
+  -webkit-transform: rotate(-0.4deg);
+  -o-transform: rotate(-0.4deg);
+  -ms-transform: rotate(-0.4deg);
+  transform: rotate(-0.4deg);
   width: 39.625%;
 }
 .location ul:before {
@@ -595,6 +595,39 @@ section.alt > div p {
 .location li:first-child {
   opacity: 1;
 }
+.location li:nth-of-type(2) {
+  -webkit-animation-delay: 4s;
+}
+.location li:nth-of-type(3) {
+  -webkit-animation-delay: 8s;
+}
+.location li:nth-of-type(4) {
+  -webkit-animation-delay: 12s;
+}
+.location li:nth-of-type(5) {
+  -webkit-animation-delay: 16s;
+}
+.location li:nth-of-type(6) {
+  -webkit-animation-delay: 20s;
+}
 .location img {
   width: 100%;
+}
+
+@-webkit-keyframes slide {
+  0%, 2% {
+    opacity: 0;
+  }
+
+  3%, 15% {
+    opacity: 1;
+  }
+
+  16%, 90% {
+    opacity: 0;
+  }
+
+  93%, 100% {
+    opacity: 1;
+  }
 }

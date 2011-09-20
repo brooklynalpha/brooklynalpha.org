@@ -17,7 +17,7 @@
 		margin-left: .95641026%;
 		padding-top: 26.5%;
 		position: relative;
-		@include rotate(-0.2deg);
+		@include rotate(-0.4deg);
 		width: 39.625%;
 		
 		&:before {
@@ -35,6 +35,7 @@
 	}
 	
 	li {
+		//-webkit-animation: slide 24s infinite;
 		left: 1.6%;
 		margin: 0 auto;
 		opacity: 0;
@@ -47,7 +48,45 @@
 		opacity: 1;
 	}
 	
+	li:nth-of-type(2) {
+		-webkit-animation-delay: 4s;
+	}
+	
+	li:nth-of-type(3) {
+		-webkit-animation-delay: 8s;
+	}
+	
+	li:nth-of-type(4) {
+		-webkit-animation-delay: 12s;
+	}
+	
+	li:nth-of-type(5) {
+		-webkit-animation-delay: 16s;
+	}
+	
+	li:nth-of-type(6) {
+		-webkit-animation-delay: 20s;
+	}
+	
 	img {
 		width: 100%;
+	}
+}
+
+@-webkit-keyframes slide {
+	0%, 2% {
+		opacity: 0;
+	}
+	
+	3%, 15% {
+		opacity: 1;
+	}
+	
+	16%, 90% {
+		opacity: 0;
+	}
+	
+	93%, 100% {
+		opacity: 1;
 	}
 }
