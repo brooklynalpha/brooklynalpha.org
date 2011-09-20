@@ -1,0 +1,43 @@
+#details {
+	
+	& > div {
+		background: transparent url(/images/bg-ghost-02.png) no-repeat right -12px;
+	}
+	
+	section {
+		margin: 3em 0 1em 0;
+		overflow: hidden;
+		padding-right: 2.0416667%;
+		
+		h1 {
+			margin-bottom: 0.5em;
+		}
+	}
+	
+	section:first-child {
+		margin-top: 1.8em;
+	}
+		
+	p {
+		float: right;
+		width: 57.2916667%;
+	}
+	
+	aside {
+		color: #929292;
+		float: left;
+		@include rabiohead(1.3em);
+		@include rotate(-1deg);
+		width: 23.9583333%;
+	}
+	
+	.alt {
+		p {
+			float: left;
+		}
+		
+		aside {
+			float: right;
+		}
+	}
+}

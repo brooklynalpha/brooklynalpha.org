@@ -115,6 +115,10 @@ a:hover {
   text-decoration: underline;
 }
 
+mark {
+  background-color: #d2ff00;
+}
+
 [role='banner'] {
   border-bottom: 14px solid #2e2e2e;
   overflow: hidden;
@@ -376,7 +380,7 @@ section h1 {
 }
 section p {
   font-size: 0.9em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   width: 90%;
 }
 section > div {
@@ -635,4 +639,40 @@ section.alt > div p {
   93%, 100% {
     opacity: 1;
   }
+}
+
+#details > div {
+  background: transparent url(/images/bg-ghost-02.png) no-repeat right -12px;
+}
+#details section {
+  margin: 3em 0 1em 0;
+  overflow: hidden;
+  padding-right: 2.0416667%;
+}
+#details section h1 {
+  margin-bottom: 0.5em;
+}
+#details section:first-child {
+  margin-top: 1.8em;
+}
+#details p {
+  float: right;
+  width: 57.2916667%;
+}
+#details aside {
+  color: #929292;
+  float: left;
+  font: 1.3em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  -moz-transform: rotate(-1deg);
+  -webkit-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  width: 23.9583333%;
+}
+#details .alt p {
+  float: left;
+}
+#details .alt aside {
+  float: right;
 }
