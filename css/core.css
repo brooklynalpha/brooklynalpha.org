@@ -280,6 +280,7 @@ a:hover {
   border-radius: 4px;
   text-align: center;
   text-shadow: white 1px 1px 1px;
+  width: 3.6em;
 }
 [role='navigation'] li:last-child a:last-child:hover {
   color: #000;
