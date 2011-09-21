@@ -21,11 +21,12 @@ body {
 }
 
 body > div {
-	float: right;
+	
+	padding-top: 2em;
 	width: 100%;
 	
-	@media screen and (min-width: 630px) {
-		width: 94%;
+	@media screen and (min-width: 600px) {
+		background: transparent url(/images/bg-ghost-02.png) no-repeat right -20px;
 	}
 }
 

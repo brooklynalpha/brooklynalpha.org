@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 0.5em;
-	width: 95%;
+	width: 100%;
 	
 	@media screen and (min-width: 630px) {
 		border-bottom-width: 14px;
@@ -51,10 +51,18 @@
 	background: transparent url(/images/branding-large.png) no-repeat right top;
 	@include background-size('100%');
 	border-bottom: 0;
-	max-width: 1180px;
-	padding-top: 19%;
+	max-width: 870px;
+	padding-top: 15%;
 	position: relative;
 	text-indent: -300em;
-	width: 95%;
+	width: 98%;
 	z-index: 90;
+	
+	@media screen and (min-width: 730px) {
+		width: 80%;
+	}
+	
+	@media screen and (min-width: 1115px) {
+		padding-top: 10.5em;
+	}
 }

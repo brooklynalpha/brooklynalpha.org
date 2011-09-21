@@ -1,3 +1,9 @@
-#home [role='main'] {
-	padding-left: 3.5416667%;	
+[role='main'] {
+	margin: 0 auto;
+	max-width: 800px;
+	width: 90%;	
+	
+	@media screen and (min-width: 730px) {
+		width: 74%;
+	}
 }

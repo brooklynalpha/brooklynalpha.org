@@ -1,4 +1,8 @@
 [role="contentinfo"] {
 	@include rabiohead(1.6em);
 	padding: 1em 0 1.6em 0;
+	
+	p {
+		margin-bottom: 1em;
+	}
 }

@@ -1,9 +1,15 @@
 .intro {
 	color: #757575;
 	@include rabiohead(2em);
-	margin-bottom: -0.2em;
+	margin-bottom: 0;
 	position: relative;
-	top: -1.25em;
-	width: 63.625%;
+	top: -0.4em;
+	width: 100%;
 	z-index: 99;
+	
+	@media screen and (min-width: 730px) {
+		top: -1.1em;
+		margin-bottom: -0.5em;
+		width: 78%;
+	}
 }
