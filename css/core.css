@@ -335,35 +335,6 @@ mark {
   position: relative;
   text-align: center;
   width: 41.333333%;
-  /*
-  &:first-child {
-  	text-align: left;
-  	width: 30.1515152%;
-  }
-  
-  &:last-child {
-  	position: absolute;
-  	right: 0;
-  	text-align: right;
-  	width: 25.1515152%;
-  	
-  	a:first-child {
-  		text-indent: 0;
-  	}
-  	
-  	a:last-child {
-  		background-color: transparent;
-  		border-bottom: 0;
-  		@include border-radius(0);
-  		text-align: right;
-  		text-shadow: none;
-  		
-  		&:hover {
-  			color: #494949;
-  		}
-  	}
-  }
-  */
 }
 #home [role='navigation'] li:first-child {
   text-align: left;
