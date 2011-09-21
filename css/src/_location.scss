@@ -31,14 +31,9 @@
 		width: 39.625%;
 		
 		&:before {
-			background: transparent url(/images/people-tape.png) no-repeat left top;
-			content: " ";
-			display: inline-block;
-			height: 25px;
+			@extend .tape;
 			left: 45%;
-			position: absolute;
 			top: -10px;
-			@include rotate(8deg);
 			width: 47px;
 			z-index: 2;		
 		}
@@ -47,9 +42,6 @@
 	li {
 		@include animation-duration(24s);
 		@include animation-iteration-count(infinite);
-		
-		//-webkit-animation-duration: 24s;
-		//-webkit-animation-iteration-count: infinite;
 		left: 1.6%;
 		margin: 0 auto;
 		opacity: 0;

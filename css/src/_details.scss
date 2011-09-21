@@ -5,8 +5,9 @@
 	}
 	
 	section {
-		margin: 3em 0 1em 0;
+		margin: 1.4em 0 1em 0;
 		overflow: hidden;
+		padding-top: 1em;
 		padding-right: 2.0416667%;
 		
 		h1 {
@@ -24,11 +25,19 @@
 	}
 	
 	aside {
+		background-color: #fff;
+		@include border-radius(1px);
+		@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
 		color: #929292;
 		float: left;
 		@include rabiohead(1.3em);
+		padding: 1%;
 		@include rotate(-1deg);
 		width: 23.9583333%;
+		
+		&:before {
+			@extend .tape;
+		}
 	}
 	
 	.alt {

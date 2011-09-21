@@ -33,3 +33,15 @@ a {
 mark {
 	background-color: #d2ff00;
 }
+
+.tape {
+	background: transparent url(/images/people-tape.png) no-repeat left top;
+	content: " ";
+	display: inline-block;
+	height: 25px;
+	left: 40%;
+	position: absolute;
+	top: -12px;
+	@include rotate(8deg);
+	width: 47px;
+}
