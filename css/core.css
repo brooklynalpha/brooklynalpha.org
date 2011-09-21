@@ -86,7 +86,7 @@ hr {
 
 body {
   background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
-  border-top: 10px solid #2e2e2e;
+  border-top: 8px solid #2e2e2e;
   color: #4d4d4d;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 100%;
@@ -146,14 +146,17 @@ mark {
 }
 
 [role='banner'] {
-  border-bottom: 8px solid #2e2e2e;
+  border-bottom: 6px solid #2e2e2e;
+  margin: 0 auto;
   overflow: hidden;
   padding-bottom: 0.5em;
+  width: 95%;
 }
 @media screen and (min-width: 630px) {
   [role='banner'] {
     border-bottom-width: 14px;
     padding-bottom: 0;
+    width: 100%;
   }
 }
 [role='banner'] > a {
@@ -303,7 +306,7 @@ mark {
   -webkit-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
-  width: 300px;
+  width: 90%;
 }
 @media screen and (min-width: 630px) {
   [role='navigation'] {
@@ -410,10 +413,17 @@ mark {
 }
 
 section {
-  border-bottom: 14px solid #2e2e2e;
-  margin: 4em 0 0.5em 0;
+  border-bottom: 6px solid #2e2e2e;
+  margin: 4em auto 0.5em auto;
   overflow: hidden;
   padding-bottom: 1.5em;
+  width: 95%;
+}
+@media screen and (min-width: 630px) {
+  section {
+    border-bottom-width: 14px;
+    width: 100%;
+  }
 }
 section h1 {
   color: #2e2e2e;
@@ -572,7 +582,7 @@ section.alt > div p {
 }
 #location section {
   padding-top: 1.5em;
-  margin: 1em 0 1em 0;
+  margin: 1em auto;
 }
 
 .location h2 {
@@ -863,7 +873,7 @@ section.alt > div p {
   background: transparent url(/images/bg-ghost-02.png) no-repeat right -12px;
 }
 #details section {
-  margin: 1.4em 0 1em 0;
+  margin: 1.4em auto 1em auto;
   overflow: hidden;
   padding-top: 1em;
   padding-right: 2.0416667%;

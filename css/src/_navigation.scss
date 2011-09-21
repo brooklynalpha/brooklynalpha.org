@@ -5,7 +5,7 @@
 	overflow: hidden;
 	@include transition-property(font-size width);
 	@include transition-duration(0.1s);
-	width: 300px;
+	width: 90%;
 	
 	@media screen and (min-width: 630px) {
 		float: right;

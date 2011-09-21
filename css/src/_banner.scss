@@ -1,12 +1,15 @@
 [role='banner'] {
 	
-	border-bottom: 8px solid #2e2e2e;
+	border-bottom: 6px solid #2e2e2e;
+	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 0.5em;
+	width: 95%;
 	
 	@media screen and (min-width: 630px) {
 		border-bottom-width: 14px;
 		padding-bottom: 0;
+		width: 100%;
 	}
 	
 	& > a {
