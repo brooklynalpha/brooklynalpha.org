@@ -1,11 +1,27 @@
 [role='navigation'] {
-	display: inline-block;
-	@include ostrichBlack(1.8em, 1em);
-	float: right;
-	margin-right: 2.0416667%;
-	margin-top: 0.7em;
-	min-width: 426px;
-	width: 57.2916667%;
+	display: block;
+	@include ostrichBlack(1.4em, 1em);
+	margin: 0.4em auto 0 auto;
+	overflow: hidden;
+	@include transition-property(font-size width);
+	@include transition-duration(0.1s);
+	width: 300px;
+	
+	@media screen and (min-width: 630px) {
+		float: right;
+		margin-top: 1.1em;
+		margin-right: 1.0416667%;
+		min-width: 320px;
+		width: 48.9583333%;
+	}
+	
+	@media screen and (min-width: 715px) {
+		margin-top: 0.7em;
+		margin-right: 2.0416667%;
+		min-width: 0;
+		font-size: 1.8em;
+		width: 57.2916667%;
+	}
 	
 	a {
 		color: #2e2e2e;

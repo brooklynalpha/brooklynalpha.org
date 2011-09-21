@@ -86,10 +86,15 @@ hr {
 
 body {
   background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
-  border-top: 14px solid #2e2e2e;
+  border-top: 10px solid #2e2e2e;
   color: #4d4d4d;
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: 100%;
+}
+@media screen and (min-width: 630px) {
+  body {
+    border-top-width: 14px;
+  }
 }
 
 -moz-::selection {
@@ -104,7 +109,12 @@ body {
 
 body > div {
   float: right;
-  width: 94%;
+  width: 100%;
+}
+@media screen and (min-width: 630px) {
+  body > div {
+    width: 94%;
+  }
 }
 
 a {
@@ -136,18 +146,32 @@ mark {
 }
 
 [role='banner'] {
-  border-bottom: 14px solid #2e2e2e;
+  border-bottom: 8px solid #2e2e2e;
   overflow: hidden;
+  padding-bottom: 0.5em;
+}
+@media screen and (min-width: 630px) {
+  [role='banner'] {
+    border-bottom-width: 14px;
+    padding-bottom: 0;
+  }
 }
 [role='banner'] > a {
-  display: inline-block;
-  float: left;
-  max-width: 310px;
-  min-width: 260px;
-  width: 32.2916667%;
+  display: block;
+  margin: 0 auto;
+  width: 260px;
 }
 [role='banner'] > a:hover {
   text-decoration: none;
+}
+@media screen and (min-width: 630px) {
+  [role='banner'] > a {
+    display: inline-block;
+    float: left;
+    max-width: 310px;
+    min-width: 260px;
+    width: 32.2916667%;
+  }
 }
 [role='banner'] h1 {
   background: transparent url(/images/branding-small.png) no-repeat left top;
@@ -267,13 +291,37 @@ mark {
 }
 
 [role='navigation'] {
-  display: inline-block;
-  font: 1.8em/1em "OstrichBlack", helvetica, arial, sans-serif;
-  float: right;
-  margin-right: 2.0416667%;
-  margin-top: 0.7em;
-  min-width: 426px;
-  width: 57.2916667%;
+  display: block;
+  font: 1.4em/1em "OstrichBlack", helvetica, arial, sans-serif;
+  margin: 0.4em auto 0 auto;
+  overflow: hidden;
+  -moz-transition-property: font-size width;
+  -webkit-transition-property: font-size width;
+  -o-transition-property: font-size width;
+  transition-property: font-size width;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  width: 300px;
+}
+@media screen and (min-width: 630px) {
+  [role='navigation'] {
+    float: right;
+    margin-top: 1.1em;
+    margin-right: 1.0416667%;
+    min-width: 320px;
+    width: 48.9583333%;
+  }
+}
+@media screen and (min-width: 715px) {
+  [role='navigation'] {
+    margin-top: 0.7em;
+    margin-right: 2.0416667%;
+    min-width: 0;
+    font-size: 1.8em;
+    width: 57.2916667%;
+  }
 }
 [role='navigation'] a {
   color: #2e2e2e;

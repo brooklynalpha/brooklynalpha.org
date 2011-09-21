@@ -1,9 +1,13 @@
 body {
 	background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
-	border-top: 14px solid #2e2e2e;
+	border-top: 10px solid #2e2e2e;
 	color: #4d4d4d;
 	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 	font-size: 100%;
+	
+	@media screen and (min-width: 630px) {
+		border-top-width: 14px;
+	}
 }
 
 -moz-::selection {
@@ -18,7 +22,11 @@ body {
 
 body > div {
 	float: right;
-	width: 94%;
+	width: 100%;
+	
+	@media screen and (min-width: 630px) {
+		width: 94%;
+	}
 }
 
 a {

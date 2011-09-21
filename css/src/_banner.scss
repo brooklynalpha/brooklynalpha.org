@@ -1,17 +1,29 @@
 [role='banner'] {
 	
-	border-bottom: 14px solid #2e2e2e;
+	border-bottom: 8px solid #2e2e2e;
 	overflow: hidden;
-		
+	padding-bottom: 0.5em;
+	
+	@media screen and (min-width: 630px) {
+		border-bottom-width: 14px;
+		padding-bottom: 0;
+	}
+	
 	& > a {
-		display: inline-block;
-		float: left;
-		max-width: 310px;
-		min-width: 260px;
-		width: 32.2916667%;
+		display: block;
+		margin: 0 auto;
+		width: 260px;
 		
 		&:hover {
 			text-decoration: none;
+		}
+		
+		@media screen and (min-width: 630px) {
+			display: inline-block;
+			float: left;
+			max-width: 310px;
+			min-width: 260px;
+			width: 32.2916667%;
 		}
 	}
 	
