@@ -31,6 +31,7 @@
 		color: #929292;
 		float: left;
 		@include rabiohead(1.3em);
+		margin-left: 2%;
 		padding: 1%;
 		@include rotate(-1deg);
 		width: 23.9583333%;
@@ -47,6 +48,8 @@
 		
 		aside {
 			float: right;
+			margin-left: 0;
+			margin-right: 2%;
 		}
 	}
 }

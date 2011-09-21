@@ -1,65 +1,44 @@
 [role='navigation'] {
 	display: inline-block;
-	@include ostrichBlack(1.8em, 0.7em);
+	@include ostrichBlack(1.8em, 1em);
 	float: right;
-	margin-right: 0.5em;
+	margin-right: 2.0416667%;
 	margin-top: 0.7em;
 	min-width: 426px;
 	width: 57.2916667%;
 	
-	ul {
-		overflow: hidden;
-	}
-	
-	li {
-		display: inline-block;
-		float: left;
-		line-height: 1em;
-		width: 50%;
-		
-		&:first-child a:last-child {
-			text-align: left;
-		}
-		
-		&:last-child  {
-			a:first-child {
-				text-indent: 0.3em;
-			}
-			
-			a:last-child {
-				background-color: #d2ff00;
-				border-bottom: 1px solid #829a00;
-				@include border-radius(4px);
-				text-align: center;
-				text-shadow: rgba(255, 255, 255, 1) 1px 1px 1px;
-				width: 3.6em;
-				
-				&:hover {
-					color: #000;
-				}
-			}
-		}
-	}
-	
 	a {
 		color: #2e2e2e;
 		display: inline-block;
-		line-height: 1em;
 		padding-top: 0.2em;
 		text-decoration: none;
 		
 		&:hover {
 			color: #494949;
-		}		
-		
-		width: 50%;
-		
-		&:first-child {
-			float: left;
 		}
+	}
+	
+	ul {
+		float: right;
+		width: 100%;
+	}
+	
+	li {
+		display: inline-block;
+		float: left;
+		text-align: center;
+		width: 25%;
+	}
+	
+	li:last-child a {
+		background-color: #d2ff00;
+		border-bottom: 1px solid #829a00;
+		@include border-radius(4px);
+		padding-left: 0.3em;
+		padding-right: 0.3em;
 		
-		&:last-child {
-			float: right;
+		&:hover {
+			color: #000;
 		}
 	}
 }
@@ -68,7 +47,7 @@
 	border-top: 20px solid #2e2e2e;
 	border-bottom: 14px solid #2e2e2e;
 	display: block;
-	@include ostrichBlack(2.75em, 0.7em);
+	@include ostrichBlack(2.75em, 1em);
 	float: none;
 	margin-right: 0;
 	margin-top: 0;
@@ -76,19 +55,34 @@
 	padding: 12px 0 2px 0;
 	width: 100%;
 	
+	a {
+		padding-top: 0;
+	}
+	
 	ul {
+		float: none;
+		overflow: hidden;
 		position: relative;
 		width: 54.2916667%;
-		z-index: 95;		
+		z-index: 95;
 	}
 	
 	li {
-		float: none;
-		margin-right: auto;
 		position: relative;
 		text-align: center;
-		width: 36.1515152%;
+		width: 41.333333%;
 		
+		&:first-child {
+			text-align: left;
+			width: 32.333333%;
+		}
+		
+		&:last-child {
+			text-align: right;
+			width: 26.333333%;
+		}
+		
+		/*
 		&:first-child {
 			text-align: left;
 			width: 30.1515152%;
@@ -116,16 +110,18 @@
 				}
 			}
 		}
+		*/
 	}
 	
-	a {
-		color: #2e2e2e;
-		text-decoration: none;
+	li:last-child a {
+		background-color: transparent;
+		border-bottom: 0px;
+		@include border-radius(0px);
+		padding-left: 0;
+		padding-right: 0;
 		
 		&:hover {
 			color: #494949;
-		}		
-		
-		width: 100%;
+		}
 	}
 }
