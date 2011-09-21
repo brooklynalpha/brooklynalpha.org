@@ -20,12 +20,11 @@ body {
 	color: #000;
 }
 
-body > div {
-	
-	padding-top: 2em;
+body > div {	
 	width: 100%;
 	
 	@media screen and (min-width: 600px) {
+		padding-top: 2em;
 		background: transparent url(/images/bg-ghost-02.png) no-repeat right -20px;
 	}
 }

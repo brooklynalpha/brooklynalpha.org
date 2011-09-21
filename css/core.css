@@ -108,11 +108,11 @@ body {
 }
 
 body > div {
-  padding-top: 2em;
   width: 100%;
 }
 @media screen and (min-width: 600px) {
   body > div {
+    padding-top: 2em;
     background: transparent url(/images/bg-ghost-02.png) no-repeat right -20px;
   }
 }
@@ -195,7 +195,7 @@ mark {
 }
 
 #home [role='banner'] {
-  background: transparent url(/images/branding-large.png) no-repeat right top;
+  background: transparent url(/images/branding-small.png) no-repeat center top;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -216,6 +216,16 @@ mark {
 @media screen and (min-width: 1115px) {
   #home [role='banner'] {
     padding-top: 10.5em;
+  }
+}
+@media screen and (min-width: 481px) {
+  #home [role='banner'] {
+    background: transparent url(/images/branding-medium.png) no-repeat right top;
+  }
+}
+@media screen and (min-width: 321px) {
+  #home [role='banner'] {
+    background: transparent url(/images/branding-large.png) no-repeat right top;
   }
 }
 
@@ -261,12 +271,20 @@ mark {
 }
 #conferenceinfo h2 {
   color: #d2ff00;
-  font: 3em/0.8em "OstrichBlack", helvetica, arial, sans-serif;
+  font: 2.6em/0.8em "OstrichBlack", helvetica, arial, sans-serif;
 }
 #conferenceinfo h3 {
   color: #757575;
-  font: 1.2em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
+  font: 1em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
   letter-spacing: 0.38em;
+}
+@media screen and (min-width: 321px) {
+  #conferenceinfo h2 {
+    font-size: 3em;
+  }
+  #conferenceinfo h3 {
+    font-size: 1.2em;
+  }
 }
 @media screen and (min-width: 460px) {
   #conferenceinfo h2 {
