@@ -282,6 +282,28 @@ mark {
   transform: rotate(8deg);
   width: 133px;
 }
+#conferenceinfo a:hover {
+  text-decoration: none;
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+#conferenceinfo a b {
+  border-bottom: 4px solid #262626;
+  display: inline-block;
+  line-height: 0.8em;
+  margin-top: 1.4em;
+  font-weight: normal;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
+}
+#conferenceinfo a i {
+  color: #666;
+  display: block;
+  font: 0.8em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  margin-top: 0.2em;
+}
 @media screen and (min-width: 321px) {
   #conferenceinfo h2 {
     font-size: 3em;
@@ -293,28 +315,6 @@ mark {
 @media screen and (min-width: 460px) {
   #conferenceinfo h2 {
     font-size: 3.8em;
-  }
-  #conferenceinfo:hover {
-    text-decoration: none;
-    -moz-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    transform: rotate(2deg);
-  }
-  #conferenceinfo b {
-    border-bottom: 4px solid #262626;
-    display: inline-block;
-    line-height: 0.8em;
-    margin-top: 1.4em;
-    font-weight: normal;
-    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px;
-  }
-  #conferenceinfo i {
-    color: #666;
-    display: block;
-    font: 0.8em/1em "RabioheadRegular", helvetica, arial, sans-serif;
-    margin-top: 0.2em;
   }
 }
 #conferenceinfo:before {
@@ -942,7 +942,6 @@ section.alt > div p {
   margin: 1.4em auto 1em auto;
   overflow: hidden;
   padding-top: 1em;
-  padding-right: 2.0416667%;
 }
 #details section h1 {
   margin-bottom: 0.5em;
