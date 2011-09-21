@@ -27,8 +27,29 @@
 		top: -0.8em;
 		@include rotate(8deg);
 		width: 133px;
-	}
+		
+		&:hover {
+			text-decoration: none;
+			@include rotate(2deg);
+		}
 
+		b {
+			border-bottom: 4px solid #262626;
+			display: inline-block;
+			line-height: 0.8em;
+			margin-top: 1.4em;
+			font-weight: normal;
+			@include text-shadow(rgba(255, 255, 255, 0.8), 1px, 1px, 1px);
+		}
+
+		i {
+			color: #666;
+			display: block;
+			@include rabiohead(0.8em);
+			margin-top: 0.2em;
+		}
+	}	
+	
 	@media screen and (min-width: 321px) {
 		h2 {
 			font-size: 3em;
@@ -42,27 +63,6 @@
 	@media screen and (min-width: 460px) {
 		h2 {
 			font-size: 3.8em;
-		}
-		
-		&:hover {
-			text-decoration: none;
-			@include rotate(2deg);
-		}
-		
-		b {
-			border-bottom: 4px solid #262626;
-			display: inline-block;
-			line-height: 0.8em;
-			margin-top: 1.4em;
-			font-weight: normal;
-			@include text-shadow(rgba(255, 255, 255, 0.8), 1px, 1px, 1px);
-		}
-		
-		i {
-			color: #666;
-			display: block;
-			@include rabiohead(0.8em);
-			margin-top: 0.2em;
 		}
 	}
 	
