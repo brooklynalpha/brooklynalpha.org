@@ -5,14 +5,13 @@
 	}
 	
 	section {
-		padding-top: 20px;
+		padding-top: 1.5em;
+		margin: 1em 0 1em 0;
 	}
 }
 
 .location {
-	
-	margin: 2em 0 0.5em 0;
-	
+		
 	h2 {
 		@include rabiohead(1.45em);
 		margin: -0.4em 0 0.4em 0;
