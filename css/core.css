@@ -195,7 +195,7 @@ mark {
 }
 
 #home [role='banner'] {
-  background: transparent url(/images/branding-small.png) no-repeat center top;
+  background: transparent url(/images/branding-small.png) no-repeat left top;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -221,11 +221,19 @@ mark {
 @media screen and (min-width: 481px) {
   #home [role='banner'] {
     background: transparent url(/images/branding-medium.png) no-repeat right top;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
   }
 }
 @media screen and (min-width: 321px) {
   #home [role='banner'] {
     background: transparent url(/images/branding-large.png) no-repeat right top;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
   }
 }
 

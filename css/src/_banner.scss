@@ -48,7 +48,7 @@
 }
 
 #home [role='banner'] {
-	background: transparent url(/images/branding-small.png) no-repeat center top;
+	background: transparent url(/images/branding-small.png) no-repeat left top;
 	@include background-size('100%');
 	border-bottom: 0;
 	max-width: 870px;
@@ -68,9 +68,11 @@
 	
 	@media screen and (min-width: 481px) {
 		background: transparent url(/images/branding-medium.png) no-repeat right top;
+		@include background-size('100%');
 	}
 	
 	@media screen and (min-width: 321px) {
 		background: transparent url(/images/branding-large.png) no-repeat right top;
+		@include background-size('100%');
 	}
 }
