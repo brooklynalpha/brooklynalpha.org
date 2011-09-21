@@ -12,19 +12,31 @@ section {
 	
 	h1 {
 		color: #2e2e2e;
-		@include ostrichBlack(2.8em, 1em);
+		@include ostrichBlack(2.2em, 1em);
+		
+		@media screen and (min-width: 570px) {
+			font-size: 2.8em;
+		}
 	}
 	
 	p {
-		font-size: 0.9em;
+		font-size: 0.8em;
 		line-height: 1.5em;
-		width: 90%;
+		
+		
+		@media screen and (min-width: 570px) {
+			font-size: 0.9em;
+			width: 90%;
+		}
 	}
 	
 	& > div {
 		padding-top: 0.8em;
-		float: right;
-		width: 57.2916667%;
+		
+		@media screen and (min-width: 570px) {
+			float: right;
+			width: 57.2916667%;
+		}
 	}
 	
 	&.alt > div {

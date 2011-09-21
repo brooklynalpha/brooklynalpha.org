@@ -427,17 +427,31 @@ section {
 }
 section h1 {
   color: #2e2e2e;
-  font: 2.8em/1em "OstrichBlack", helvetica, arial, sans-serif;
+  font: 2.2em/1em "OstrichBlack", helvetica, arial, sans-serif;
+}
+@media screen and (min-width: 570px) {
+  section h1 {
+    font-size: 2.8em;
+  }
 }
 section p {
-  font-size: 0.9em;
+  font-size: 0.8em;
   line-height: 1.5em;
-  width: 90%;
+}
+@media screen and (min-width: 570px) {
+  section p {
+    font-size: 0.9em;
+    width: 90%;
+  }
 }
 section > div {
   padding-top: 0.8em;
-  float: right;
-  width: 57.2916667%;
+}
+@media screen and (min-width: 570px) {
+  section > div {
+    float: right;
+    width: 57.2916667%;
+  }
 }
 section.alt > div {
   float: left;
@@ -581,8 +595,12 @@ section.alt > div p {
   background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
 }
 #location section {
-  padding-top: 1.5em;
   margin: 1em auto;
+}
+@media screen and (min-width: 570px) {
+  #location section {
+    padding-top: 1.5em;
+  }
 }
 
 .location h2 {
@@ -601,22 +619,30 @@ section.alt > div p {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  float: left;
-  margin-left: .95641026%;
-  padding-top: 26.5%;
+  margin-top: 1.2em;
+  padding-top: 56.8%;
   position: relative;
   -moz-transform: rotate(-0.4deg);
   -webkit-transform: rotate(-0.4deg);
   -o-transform: rotate(-0.4deg);
   -ms-transform: rotate(-0.4deg);
   transform: rotate(-0.4deg);
-  width: 39.625%;
+  width: 85%;
 }
 .location ul:before {
   left: 45%;
   top: -10px;
   z-index: 2;
+}
+@media screen and (min-width: 570px) {
+  .location ul {
+    display: inline-block;
+    float: left;
+    margin-left: .95641026%;
+    margin-top: 0;
+    padding-top: 26.5%;
+    width: 39.625%;
+  }
 }
 .location li {
   -moz-animation-duration: 24s;
