@@ -119,7 +119,7 @@ mark {
   background-color: #d2ff00;
 }
 
-.tape, .people li:before, .location ul:before, #details aside:before {
+.tape, .people li:before, .location ul:before, .directions div:last-child:before, #details aside:before {
   background: transparent url(/images/people-tape.png) no-repeat left top;
   content: " ";
   display: inline-block;
@@ -583,7 +583,6 @@ section.alt > div p {
 .location ul:before {
   left: 45%;
   top: -10px;
-  width: 47px;
   z-index: 2;
 }
 .location li {
@@ -665,20 +664,8 @@ section.alt > div p {
   width: 97%;
 }
 .directions div:last-child:before {
-  background: transparent url(/images/people-tape.png) no-repeat left top;
-  content: " ";
-  display: inline-block;
-  height: 25px;
   left: 45%;
-  position: absolute;
   top: -10px;
-  -moz-transform: rotate(8deg);
-  -webkit-transform: rotate(8deg);
-  -o-transform: rotate(8deg);
-  -ms-transform: rotate(8deg);
-  transform: rotate(8deg);
-  width: 47px;
-  z-index: 2;
 }
 
 @-webkit-keyframes slideOne {
@@ -864,7 +851,7 @@ section.alt > div p {
 #details section:first-child {
   margin-top: 1.8em;
 }
-#details p {
+#details section p {
   float: right;
   width: 57.2916667%;
 }

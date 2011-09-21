@@ -34,7 +34,6 @@
 			@extend .tape;
 			left: 45%;
 			top: -10px;
-			width: 47px;
 			z-index: 2;		
 		}
 	}
@@ -99,16 +98,9 @@
 	}
 	
 	&:before {
-		background: transparent url(/images/people-tape.png) no-repeat left top;
-		content: " ";
-		display: inline-block;
-		height: 25px;
+		@extend .tape;
 		left: 45%;
-		position: absolute;
-		top: -10px;
-		@include rotate(8deg);
-		width: 47px;
-		z-index: 2;		
+		top: -10px;	
 	}
 }
 
