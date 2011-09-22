@@ -1,5 +1,8 @@
 body {
-	background: #fcfcfc url(/images/body-bg-grid.gif) repeat 25%;
+	background-color: #fcfcfc; 
+	background-image: url(/images/body-bg-grid.gif);
+	background-repeat: repeat;
+	background-position: 25%;
 	border-top: 8px solid #2e2e2e;
 	color: #4d4d4d;
 	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
@@ -22,6 +25,7 @@ body {
 
 body > div {
 	float: right;
+	max-width: 1280px;
 	width: 100%;
 	
 	@media screen and (min-width: 630px) {
