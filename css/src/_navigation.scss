@@ -60,16 +60,15 @@
 }
 
 #home [role='navigation'] {
-	border-top: 20px solid #2e2e2e;
-	border-bottom: 14px solid #2e2e2e;
+	border-top: 8px solid #2e2e2e;
+	border-bottom: 6px solid #2e2e2e;
 	display: block;
-	@include ostrichBlack(2.75em, 1em);
+	@include ostrichBlack(1.8em, 1em);
 	float: none;
-	margin-right: 0;
-	margin-top: 0;
+	margin: 0 auto;
 	min-width: 0;
 	padding: 12px 0 2px 0;
-	width: 100%;
+	width: 95%;
 	
 	a {
 		padding-top: 0;
@@ -79,7 +78,7 @@
 		float: none;
 		overflow: hidden;
 		position: relative;
-		width: 54.2916667%;
+		width: 100%;
 		z-index: 95;
 	}
 	
@@ -108,6 +107,17 @@
 		
 		&:hover {
 			color: #494949;
+		}
+	}
+	
+	@media screen and (min-width: 570px) {
+		border-top: 20px solid #2e2e2e;
+		border-bottom: 14px solid #2e2e2e;
+		font-size: 2.75em;
+		width: 100%;
+		
+		ul {
+			width: 54.2916667%;
 		}
 	}
 }

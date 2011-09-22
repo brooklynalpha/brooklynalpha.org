@@ -14,4 +14,4 @@ var APP = (function () {
 	return ret;
 }());
 
-$(document).ready(APP.init);
+//$(document).ready(APP.init);
