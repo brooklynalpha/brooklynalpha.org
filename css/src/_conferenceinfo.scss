@@ -6,14 +6,13 @@
 	
 	h2 {
 		color: #d2ff00;
-		@include ostrichBlack(3em, 0.8em);
-		;
+		@include ostrichBlack(2.8em, 0.8em);
 	}
 	
 	h3 {
 		color: #757575;
 		@include ostrichMedium(1.2em, 0.8em);
-		letter-spacing: 0.38em;
+		letter-spacing: 0.3em;
 		text-indent: 0.05em;
 	}
 	
@@ -21,9 +20,8 @@
 		background-color: #d2ff00;
 		border-bottom: 1px solid #829a00;
 		@include border-radius(4px);
-		padding-top: 0.25em;
-		padding-left: 0.3em;
-		padding-right: 0.3em;
+		margin: 0.25em 0;
+		padding: 0.25em 0.3em 0 0.3em;
 		color: #262626;
 		display: block;
 		@include ostrichBlack(2.5em);
@@ -55,6 +53,7 @@
 		}
 		
 		h3 {
+			letter-spacing: 0.38em;
 			width: 57.2916667%;
 		}
 		
