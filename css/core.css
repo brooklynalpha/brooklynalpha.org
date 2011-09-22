@@ -493,12 +493,14 @@ section > div {
     width: 57.2916667%;
   }
 }
-section.alt > div {
-  float: left;
-  text-align: right;
-}
-section.alt > div p {
-  float: right;
+@media screen and (min-width: 570px) {
+  section.alt > div {
+    float: left;
+    text-align: right;
+  }
+  section.alt > div p {
+    float: right;
+  }
 }
 
 #home section p {
@@ -631,8 +633,10 @@ section.alt > div p {
   width: 99.3548387%;
 }
 
-#location > div {
-  background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
+@media screen and (min-width: 570px) {
+  #location > div {
+    background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
+  }
 }
 #location section {
   margin: 1em auto;

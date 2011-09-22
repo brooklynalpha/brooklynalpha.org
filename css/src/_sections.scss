@@ -38,12 +38,14 @@ section {
 		}
 	}
 	
-	&.alt > div {
-		float: left;
-		text-align: right;
-		
-		p {
-			float: right;
+	@media screen and (min-width: 570px) {
+		&.alt > div {
+			float: left;
+			text-align: right;
+			
+			p {
+				float: right;
+			}
 		}
 	}
 }
