@@ -129,7 +129,7 @@ mark {
   background-color: rgba(208, 255, 0, 0.3);
 }
 
-.tape, .people li:before, .location ul:before, .directions div:last-child:before, #details aside:before {
+.tape, .people li:before, .location ul:before, .directions a:last-child:before, #details aside:before {
   background: transparent url(/images/people-tape.png) no-repeat left top;
   content: " ";
   display: inline-block;
@@ -733,7 +733,7 @@ section.alt > div p {
   width: 100%;
 }
 
-.directions div:last-child {
+.directions a:last-child {
   background-color: #fff;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -746,25 +746,34 @@ section.alt > div p {
   -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   display: inline-block;
-  float: right;
+  margin-top: 1.2em;
   margin-right: .95641026%;
-  padding: 0.75% 0;
+  padding: 1.5% 0;
   position: relative;
   -moz-transform: rotate(0.4deg);
   -webkit-transform: rotate(0.4deg);
   -o-transform: rotate(0.4deg);
   -ms-transform: rotate(0.4deg);
   transform: rotate(0.4deg);
-  width: 39.625%;
+  width: 85%;
 }
-.directions div:last-child img {
+.directions a:last-child img {
   display: block;
   margin: 0 auto;
   width: 97%;
 }
-.directions div:last-child:before {
+.directions a:last-child:before {
   left: 45%;
   top: -10px;
+}
+@media screen and (min-width: 570px) {
+  .directions a:last-child {
+    float: right;
+    margin-top: 0;
+    margin-right: .95641026%;
+    padding: 0.75% 0;
+    width: 39.625%;
+  }
 }
 
 @-webkit-keyframes slideOne {

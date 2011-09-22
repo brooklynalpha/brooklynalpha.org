@@ -88,17 +88,17 @@
 	}
 }
 
-.directions div:last-child {
+.directions a:last-child {
 	background-color: #fff;
 	@include border-radius(1px);
 	@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
 	display: inline-block;
-	float: right;
+	margin-top: 1.2em;
 	margin-right: .95641026%;
-	padding: 0.75% 0;
+	padding: 1.5% 0;
 	position: relative;
 	@include rotate(0.4deg);
-	width: 39.625%;
+	width: 85%;
 	
 	img {
 		display: block;
@@ -110,6 +110,14 @@
 		@extend .tape;
 		left: 45%;
 		top: -10px;	
+	}
+	
+	@media screen and (min-width: 570px) {
+		float: right;
+		margin-top: 0;
+		margin-right: .95641026%;
+		padding: 0.75% 0;
+		width: 39.625%;
 	}
 }
 
