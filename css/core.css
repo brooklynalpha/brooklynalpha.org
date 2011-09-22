@@ -258,23 +258,6 @@ mark {
   margin: 0 auto;
   position: relative;
   width: 95%;
-  /*
-  @media screen and (min-width: 321px) {
-  	h2 {
-  		font-size: 3em;
-  	}
-  	
-  	h3 {
-  		font-size: 1.2em;
-  	}
-  }
-  
-  @media screen and (min-width: 460px) {
-  	h2 {
-  		font-size: 3.8em;
-  	}
-  }
-  */
 }
 #conferenceinfo h2 {
   color: #d2ff00;
@@ -370,17 +353,17 @@ mark {
     margin-top: 0.2em;
   }
   #conferenceinfo:before {
-    background: transparent url(/images/buildings-large.png) no-repeat 5em -2em;
-    -moz-background-size: 105%;
-    -webkit-background-size: 105%;
-    -o-background-size: 105%;
-    background-size: 105%;
+    background: transparent url(/images/buildings-large.png) no-repeat 14em -2em;
+    -moz-background-size: 90%;
+    -webkit-background-size: 90%;
+    -o-background-size: 90%;
+    background-size: 90%;
     content: " ";
     display: inline-block;
     height: 500px;
     max-width: 479px;
     position: absolute;
-    top: -15em;
+    top: -17em;
     right: 0;
     width: 100%;
   }
@@ -507,8 +490,16 @@ mark {
   #home [role='navigation'] {
     border-top: 20px solid #2e2e2e;
     border-bottom: 14px solid #2e2e2e;
-    font-size: 2.75em;
+    font-size: 2.1em;
     width: 100%;
+  }
+  #home [role='navigation'] ul {
+    width: 64.2916667%;
+  }
+}
+@media screen and (min-width: 800px) {
+  #home [role='navigation'] {
+    font-size: 2.75em;
   }
   #home [role='navigation'] ul {
     width: 54.2916667%;

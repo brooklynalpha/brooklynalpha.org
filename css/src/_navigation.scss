@@ -113,8 +113,17 @@
 	@media screen and (min-width: 630px) {
 		border-top: 20px solid #2e2e2e;
 		border-bottom: 14px solid #2e2e2e;
-		font-size: 2.75em;
+		//font-size: 2.75em;
+		font-size: 2.1em;
 		width: 100%;
+		
+		ul {
+			width: 64.2916667%;
+		}
+	}
+	
+	@media screen and (min-width: 800px) {
+		font-size: 2.75em;
 		
 		ul {
 			width: 54.2916667%;
