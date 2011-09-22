@@ -54,9 +54,12 @@
 	padding-top: 19%;
 	position: relative;
 	text-indent: -300em;
-	width: 95%;
+	width: 100%;
 	z-index: 90;
 	
+	@media screen and (min-width: 630px) {
+		width: 95%;
+	}
 	
 	@media screen and (min-width: 321px) {
 		background: transparent url(/images/branding-medium.png) no-repeat right top;
@@ -67,9 +70,4 @@
 		background: transparent url(/images/branding-large.png) no-repeat right top;
 		@include background-size('100%');
 	}
-	/*
-	@media screen and (min-width: 730px) {
-		width: 80%;
-	}
-	*/
 }

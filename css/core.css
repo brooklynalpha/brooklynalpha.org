@@ -205,13 +205,13 @@ mark {
   padding-top: 19%;
   position: relative;
   text-indent: -300em;
-  width: 95%;
+  width: 100%;
   z-index: 90;
-  /*
-  @media screen and (min-width: 730px) {
-  	width: 80%;
+}
+@media screen and (min-width: 630px) {
+  #home [role='banner'] {
+    width: 95%;
   }
-  */
 }
 @media screen and (min-width: 321px) {
   #home [role='banner'] {
@@ -232,7 +232,7 @@ mark {
   }
 }
 
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 630px) {
   #home [role='main'] {
     padding-left: 6.1416667%;
   }
@@ -246,7 +246,7 @@ mark {
   width: 90%;
   z-index: 99;
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 630px) {
   .intro {
     margin: 0 0 -0.2em 0;
     top: -1.25em;
@@ -323,7 +323,7 @@ mark {
   display: none;
   font: 0.8em/1em "RabioheadRegular", helvetica, arial, sans-serif;
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 630px) {
   #conferenceinfo {
     margin: 0;
     width: 100%;
@@ -503,7 +503,7 @@ mark {
 #home [role='navigation'] li:last-child a:hover {
   color: #494949;
 }
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 630px) {
   #home [role='navigation'] {
     border-top: 20px solid #2e2e2e;
     border-bottom: 14px solid #2e2e2e;
