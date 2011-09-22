@@ -4,8 +4,9 @@ var APP = (function () {
 	
 	// Start this bad dude up
 	ret.init = function () {
+		
 		$('#conferenceinfo h2').fitText(0.68);
-		$('#conferenceinfo h3').fitText(1.68);
+		$('#conferenceinfo h3').fitText(1.5);
 		$('[role=banner] a h2').fitText(1.3, {
 			'minFontSize': '19'
 		});
@@ -14,4 +15,4 @@ var APP = (function () {
 	return ret;
 }());
 
-//$(document).ready(APP.init);
+$(document).ready(APP.init);

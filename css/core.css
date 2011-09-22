@@ -315,7 +315,6 @@ mark {
     width: 57.2916667%;
   }
   #conferenceinfo h3 {
-    letter-spacing: 0.38em;
     width: 57.2916667%;
   }
   #conferenceinfo a {
@@ -494,15 +493,12 @@ mark {
     width: 100%;
   }
   #home [role='navigation'] ul {
-    width: 64.2916667%;
+    width: 54.2916667%;
   }
 }
 @media screen and (min-width: 800px) {
   #home [role='navigation'] {
     font-size: 2.75em;
-  }
-  #home [role='navigation'] ul {
-    width: 54.2916667%;
   }
 }
 
