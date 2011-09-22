@@ -1,7 +1,9 @@
 .people {
 	
 	@media screen and (min-width: 630px) {
-		width: 90%;
+		ul {
+			width: 90%;	
+		}
 	}
 	
 	li {

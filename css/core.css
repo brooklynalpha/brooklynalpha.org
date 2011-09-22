@@ -578,7 +578,7 @@ section > div {
 }
 
 @media screen and (min-width: 630px) {
-  .people {
+  .people ul {
     width: 90%;
   }
 }
