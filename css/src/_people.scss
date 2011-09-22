@@ -1,6 +1,6 @@
 .people {
 	
-	ul {
+	@media screen and (min-width: 630px) {
 		width: 90%;
 	}
 	
@@ -13,7 +13,15 @@
 		position: relative;
 		@include rotate(-0.4deg);
 		vertical-align: top;
-		width: 31.2916667%;
+		width: 98%;
+		
+		@media screen and (min-width: 500px) {
+			width: 45%;
+		}
+		
+		@media screen and (min-width: 630px) {
+			width: 31.2916667%;
+		}
 		
 		&:nth-child(2n) {
 			@include rotate(0.1deg);
