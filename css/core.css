@@ -282,9 +282,17 @@ mark {
 }
 #conferenceinfo h3 {
   color: #757575;
-  font: 1.2em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
+  font: 1.25em/0.8em "OstrichMedium", helvetica, arial, sans-serif;
   letter-spacing: 0.3em;
   text-indent: 0.05em;
+}
+@media screen and (min-width: 321px) {
+  #conferenceinfo h2 {
+    font-size: 3.5em;
+  }
+  #conferenceinfo h3 {
+    font-size: 1.5em;
+  }
 }
 #conferenceinfo a {
   background-color: #d2ff00;
@@ -361,8 +369,6 @@ mark {
     font-size: 0.8em;
     margin-top: 0.2em;
   }
-}
-@media screen and (min-width: 570px) {
   #conferenceinfo:before {
     background: transparent url(/images/buildings-large.png) no-repeat 5em -2em;
     -moz-background-size: 105%;
