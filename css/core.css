@@ -207,18 +207,13 @@ mark {
   text-indent: -300em;
   width: 95%;
   z-index: 90;
-}
-@media screen and (min-width: 730px) {
-  #home [role='banner'] {
-    width: 80%;
+  /*
+  @media screen and (min-width: 730px) {
+  	width: 80%;
   }
+  */
 }
-@media screen and (min-width: 1115px) {
-  #home [role='banner'] {
-    padding-top: 10.5em;
-  }
-}
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 321px) {
   #home [role='banner'] {
     background: transparent url(/images/branding-medium.png) no-repeat right top;
     -moz-background-size: 100%;
@@ -227,7 +222,7 @@ mark {
     background-size: 100%;
   }
 }
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 481px) {
   #home [role='banner'] {
     background: transparent url(/images/branding-large.png) no-repeat right top;
     -moz-background-size: 100%;
@@ -238,7 +233,7 @@ mark {
 }
 
 #home [role='main'] {
-  padding-left: 3.5416667%;
+  padding-left: 6.1416667%;
 }
 
 .intro {
