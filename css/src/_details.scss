@@ -13,16 +13,9 @@
 	}
 	
 	aside {
-		background-color: #f1f69d;
-		border-top: 12px solid #e9ee9a;
-		@include border-radius(1px);
-		@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 2px, 2px);
-		color: #183070;
+		@extend .postIt;
 		float: left;
-		@include rabiohead(1.3em);
 		margin-left: 2%;
-		padding: 0 1.8% 1.2% 1.8%;
-		@include rotate(-1deg);
 		width: 23.9583333%;
 	}
 	
