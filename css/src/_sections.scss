@@ -40,6 +40,20 @@ section {
 		}
 	}
 	
+	section {
+		border-bottom: 0px;
+		
+		h1 {
+			font-size: 1.4em;
+
+			@media screen and (min-width: 570px) {
+				font-size: 1.8em;
+			}
+		}
+		
+		width: 100%;
+	}
+	
 	@media screen and (min-width: 570px) {
 		&.alt > div {
 			float: left;
