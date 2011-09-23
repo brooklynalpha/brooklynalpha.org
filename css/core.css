@@ -128,7 +128,58 @@ mark {
   background-color: rgba(208, 255, 0, 0.3);
 }
 
-.tape, .people li:before, .location ul:before, .directions a:last-child:before {
+.polaroid {
+  background-color: #fff;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -khtml-border-radius: 1px;
+  border-radius: 1px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 0.8em;
+  padding: 1.5% 0;
+  position: relative;
+  -moz-transform: rotate(0.4deg);
+  -webkit-transform: rotate(0.4deg);
+  -o-transform: rotate(0.4deg);
+  -ms-transform: rotate(0.4deg);
+  transform: rotate(0.4deg);
+  width: 95%;
+}
+.polaroid img {
+  display: block;
+  margin: 0 auto;
+  width: 97%;
+}
+.polaroid figcaption {
+  color: #153285;
+  font: 1.2em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  padding: 2% 2% 0.5% 3%;
+}
+.polaroid:before {
+  left: 45%;
+  top: -10px;
+}
+@media screen and (min-width: 570px) {
+  .polaroid {
+    float: left;
+    margin-left: .95641026%;
+    padding: 0.75% 0;
+    width: 39.625%;
+  }
+  .polaroid.alt {
+    float: right;
+    margin-left: 0;
+    margin-right: .95641026%;
+  }
+}
+
+.tape, .polaroid:before, .people li:before {
   background: transparent url(/images/people-tape.png) no-repeat left top;
   content: " ";
   display: inline-block;
@@ -142,6 +193,7 @@ mark {
   -ms-transform: rotate(8deg);
   transform: rotate(8deg);
   width: 47px;
+  z-index: 2;
 }
 
 [role='banner'] {
@@ -540,14 +592,18 @@ mark {
 
 section {
   border-bottom: 6px solid #2e2e2e;
-  margin: 1.5em auto 0.5em auto;
   overflow: hidden;
+  margin: 1em auto;
   padding-bottom: 1.5em;
   width: 95%;
 }
+@media screen and (min-width: 570px) {
+  section {
+    padding-top: 1.5em;
+  }
+}
 @media screen and (min-width: 630px) {
   section {
-    margin: 4em 0 0.5em 0;
     border-bottom-width: 14px;
     width: 100%;
   }
@@ -570,9 +626,6 @@ section p {
     font-size: 0.9em;
     width: 90%;
   }
-}
-section > div {
-  padding-top: 0.8em;
 }
 @media screen and (min-width: 570px) {
   section > div {
@@ -747,54 +800,17 @@ section > div {
     background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
   }
 }
-#location section {
-  margin: 1em auto;
-}
-@media screen and (min-width: 570px) {
-  #location section {
-    padding-top: 1.5em;
-  }
-}
 
 .location h2 {
   font: 1.45em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   margin: -0.4em 0 0.4em 0;
 }
-.location ul {
-  background-color: #fff;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -o-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -khtml-border-radius: 1px;
-  border-radius: 1px;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  margin-top: 1.2em;
-  padding-top: 56.8%;
-  position: relative;
-  -moz-transform: rotate(-0.4deg);
-  -webkit-transform: rotate(-0.4deg);
-  -o-transform: rotate(-0.4deg);
-  -ms-transform: rotate(-0.4deg);
-  transform: rotate(-0.4deg);
-  width: 85%;
-}
-.location ul:before {
-  left: 45%;
-  top: -10px;
-  z-index: 2;
+.location .polaroid {
+  padding: 63.8% 0 0 0;
 }
 @media screen and (min-width: 570px) {
-  .location ul {
-    display: inline-block;
-    float: left;
-    margin-left: .95641026%;
-    margin-top: 0;
-    padding-top: 26.5%;
-    width: 39.625%;
+  .location .polaroid {
+    padding: 26.5% 0 0 0;
   }
 }
 .location li {
@@ -844,49 +860,6 @@ section > div {
 }
 .location img {
   width: 100%;
-}
-
-.directions a:last-child {
-  background-color: #fff;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
-  -o-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -khtml-border-radius: 1px;
-  border-radius: 1px;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  margin-top: 1.2em;
-  margin-right: .95641026%;
-  padding: 1.5% 0;
-  position: relative;
-  -moz-transform: rotate(0.4deg);
-  -webkit-transform: rotate(0.4deg);
-  -o-transform: rotate(0.4deg);
-  -ms-transform: rotate(0.4deg);
-  transform: rotate(0.4deg);
-  width: 85%;
-}
-.directions a:last-child img {
-  display: block;
-  margin: 0 auto;
-  width: 97%;
-}
-.directions a:last-child:before {
-  left: 45%;
-  top: -10px;
-}
-@media screen and (min-width: 570px) {
-  .directions a:last-child {
-    float: right;
-    margin-top: 0;
-    margin-right: .95641026%;
-    padding: 0.75% 0;
-    width: 39.625%;
-  }
 }
 
 @-webkit-keyframes slideOne {
@@ -1062,18 +1035,6 @@ section > div {
     background: transparent url(/images/bg-ghost-02.png) no-repeat right -12px;
   }
 }
-#details section {
-  margin: 1.4em auto 1em auto;
-  overflow: hidden;
-  padding-top: 1em;
-}
-#details section h1 {
-  margin-bottom: 0.5em;
-}
-#details section:first-child {
-  margin-top: 1.8em;
-  padding-top: 0;
-}
 #details section p {
   float: right;
   margin-right: 2%;
@@ -1116,8 +1077,4 @@ section > div {
   -o-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
-}
-
-#about section:first-child {
-  margin-top: 1.8em;
 }

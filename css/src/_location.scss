@@ -5,14 +5,6 @@
 			background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
 		}
 	}
-	
-	section {
-		margin: 1em auto;
-		
-		@media screen and (min-width: 570px) {
-			padding-top: 1.5em;	
-		}
-	}
 }
 
 .location {
@@ -22,30 +14,13 @@
 		margin: -0.4em 0 0.4em 0;
 	}
 	
-	ul {
-		background-color: #fff;
-		@include border-radius(1px);
-		@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
-		margin-top: 1.2em;
-		padding-top: 56.8%;
-		position: relative;
-		@include rotate(-0.4deg);
-		width: 85%;
-		
-		&:before {
-			@extend .tape;
-			left: 45%;
-			top: -10px;
-			z-index: 2;		
-		}
-		
-		@media screen and (min-width: 570px) {
-			display: inline-block;
-			float: left;
-			margin-left: .95641026%;
-			margin-top: 0;
-			padding-top: 26.5%;
-			width: 39.625%;
+	.polaroid {
+		padding: 63.8% 0 0 0;
+	}
+	
+	@media screen and (min-width: 570px) {
+		.polaroid {
+			padding: 26.5% 0 0 0;
 		}
 	}
 	
@@ -87,39 +62,6 @@
 	
 	img {
 		width: 100%;
-	}
-}
-
-.directions a:last-child {
-	background-color: #fff;
-	@include border-radius(1px);
-	@include single-box-shadow(rgba(0, 0, 0, 0.2), 0, 1px, 4px);
-	display: inline-block;
-	margin-top: 1.2em;
-	margin-right: .95641026%;
-	padding: 1.5% 0;
-	position: relative;
-	@include rotate(0.4deg);
-	width: 85%;
-	
-	img {
-		display: block;
-		margin: 0 auto;
-		width: 97%;
-	}
-	
-	&:before {
-		@extend .tape;
-		left: 45%;
-		top: -10px;	
-	}
-	
-	@media screen and (min-width: 570px) {
-		float: right;
-		margin-top: 0;
-		margin-right: .95641026%;
-		padding: 0.75% 0;
-		width: 39.625%;
 	}
 }
 
