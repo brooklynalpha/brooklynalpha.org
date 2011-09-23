@@ -1114,4 +1114,12 @@ section section h1 {
     float: right;
     width: 40.625%;
   }
+  .about-hosts > div {
+    float: none;
+    width: 90%;
+  }
+  .about-hosts p {
+    font-size: 0.9em;
+    width: 100%;
+  }
 }

@@ -2,6 +2,7 @@
 	clear: both;
 	width: 100%;
 }
+
 .about-new-conference {
 	@media screen and (min-width: 570px) {
 		float: left;
@@ -10,8 +11,20 @@
 }
 
 .about-hosts {
+	
 	@media screen and (min-width: 570px) {
 		float: right;
 		width: 40.625%;
+		
+		& > div {
+			float: none;
+			width: 90%;
+		}
+		
+		p {
+			font-size: 0.9em;
+			width: 100%;
+		}
+		
 	}
 }
