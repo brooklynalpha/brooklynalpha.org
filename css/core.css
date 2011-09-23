@@ -1118,28 +1118,37 @@ section section h1 {
 }
 .about-hosts p {
   line-height: 1em;
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 0.5em auto 0.7em auto;
   width: 95%;
 }
 .about-hosts .postIt, .about-hosts #details aside, #details .about-hosts aside {
+  padding-bottom: 6%;
   -moz-transform: rotate(-0.5deg);
   -webkit-transform: rotate(-0.5deg);
   -o-transform: rotate(-0.5deg);
   -ms-transform: rotate(-0.5deg);
   transform: rotate(-0.5deg);
-  padding-bottom: 6%;
+}
+@media screen and (min-width: 570px) {
+  .about-hosts .postIt, .about-hosts #details aside, #details .about-hosts aside {
+    margin-top: 1em;
+  }
 }
 .about-hosts .polaroid {
+  margin-left: 2%;
   top: -1.5em;
   -moz-transform: rotate(-1.5deg);
   -webkit-transform: rotate(-1.5deg);
   -o-transform: rotate(-1.5deg);
   -ms-transform: rotate(-1.5deg);
   transform: rotate(-1.5deg);
+  width: 44%;
   z-index: 2;
 }
 .about-hosts .polaroid.alt {
+  float: right;
+  margin-right: 4%;
   top: -2em;
   -moz-transform: rotate(1.5deg);
   -webkit-transform: rotate(1.5deg);
@@ -1157,7 +1166,6 @@ section section h1 {
     width: 36.625%;
   }
   .about-hosts .polaroid.alt {
-    float: right;
     margin-left: 0;
     margin-right: 14.95641026%;
   }

@@ -19,23 +19,30 @@
 	
 	p {
 		line-height: 1em;
-		font-size: 1em;
+		font-size: 1.1em;
 		margin: 0.5em auto 0.7em auto;
 		width: 95%;
 	}
 	
 	.postIt {
-		@include rotate(-.5deg);
 		padding-bottom: 6%;
+		@include rotate(-.5deg);
+		
+		@media screen and (min-width: 570px) {
+			margin-top: 1em;
+		}
 	}
 	
 	.polaroid {
-		
+		margin-left: 2%;
 		top: -1.5em;
 		@include rotate(-1.5deg);
+		width: 44%;
 		z-index: 2;
 		
 		&.alt {
+			float: right;
+			margin-right: 4%;
 			top: -2em;
 			@include rotate(1.5deg);
 		}
@@ -50,7 +57,6 @@
 			width: 36.625%;
 
 			&.alt {
-				float: right;
 				margin-left: 0;
 				margin-right: 14.95641026%;
 			}
