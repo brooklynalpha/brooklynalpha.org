@@ -1096,3 +1096,22 @@ section section h1 {
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
 }
+
+.sad-extra-div-for-odd-clear-is-sad {
+  clear: both;
+  width: 100%;
+}
+
+@media screen and (min-width: 570px) {
+  .about-new-conference {
+    float: left;
+    width: 57.2916667%;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .about-hosts {
+    float: right;
+    width: 40.625%;
+  }
+}
