@@ -12,24 +12,59 @@
 
 .about-hosts {
 	
+	h1 {
+		margin: 0.5em auto 0 auto;
+		width: 95%;
+	}
+	
 	p {
 		line-height: 1em;
-		margin: 0.5em 0;
+		font-size: 1em;
+		margin: 0.5em auto 0.7em auto;
+		width: 95%;
+	}
+	
+	.postIt {
+		@include rotate(-.5deg);
+		padding-bottom: 6%;
+	}
+	
+	.polaroid {
+		
+		top: -1.5em;
+		@include rotate(-1.5deg);
+		z-index: 2;
+		
+		&.alt {
+			top: -2em;
+			@include rotate(1.5deg);
+		}
+		
+		figcaption {
+			font-size: 1.4em;
+			text-align: center;
+		}
+		
+		@media screen and (min-width: 570px) {
+			margin-left: 4.05641026%;
+			width: 36.625%;
+
+			&.alt {
+				float: right;
+				margin-left: 0;
+				margin-right: 14.95641026%;
+			}
+		}
 	}
 	
 	@media screen and (min-width: 570px) {
 		float: right;
 		width: 40.625%;
 		
-		& > div {
+		.postIt {
+			margin-left: 1%;
 			float: none;
-			width: 90%;
+			width: 85%;
 		}
-		
-		p {
-			font-size: 0.9em;
-			width: 90%;
-		}
-		
 	}
 }

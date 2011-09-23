@@ -222,7 +222,7 @@ mark {
   transform: rotate(-1deg);
 }
 .postIt h1, #details aside h1 {
-  font: 1.3em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+  font: 1.2em/1em "RabioheadRegular", helvetica, arial, sans-serif;
 }
 
 [role='banner'] {
@@ -1112,21 +1112,64 @@ section section h1 {
   }
 }
 
+.about-hosts h1 {
+  margin: 0.5em auto 0 auto;
+  width: 95%;
+}
 .about-hosts p {
   line-height: 1em;
-  margin: 0.5em 0;
+  font-size: 1em;
+  margin: 0.5em auto 0.7em auto;
+  width: 95%;
+}
+.about-hosts .postIt, .about-hosts #details aside, #details .about-hosts aside {
+  -moz-transform: rotate(-0.5deg);
+  -webkit-transform: rotate(-0.5deg);
+  -o-transform: rotate(-0.5deg);
+  -ms-transform: rotate(-0.5deg);
+  transform: rotate(-0.5deg);
+  padding-bottom: 6%;
+}
+.about-hosts .polaroid {
+  top: -1.5em;
+  -moz-transform: rotate(-1.5deg);
+  -webkit-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+  z-index: 2;
+}
+.about-hosts .polaroid.alt {
+  top: -2em;
+  -moz-transform: rotate(1.5deg);
+  -webkit-transform: rotate(1.5deg);
+  -o-transform: rotate(1.5deg);
+  -ms-transform: rotate(1.5deg);
+  transform: rotate(1.5deg);
+}
+.about-hosts .polaroid figcaption {
+  font-size: 1.4em;
+  text-align: center;
+}
+@media screen and (min-width: 570px) {
+  .about-hosts .polaroid {
+    margin-left: 4.05641026%;
+    width: 36.625%;
+  }
+  .about-hosts .polaroid.alt {
+    float: right;
+    margin-left: 0;
+    margin-right: 14.95641026%;
+  }
 }
 @media screen and (min-width: 570px) {
   .about-hosts {
     float: right;
     width: 40.625%;
   }
-  .about-hosts > div {
+  .about-hosts .postIt, .about-hosts #details aside, #details .about-hosts aside {
+    margin-left: 1%;
     float: none;
-    width: 90%;
-  }
-  .about-hosts p {
-    font-size: 0.9em;
-    width: 90%;
+    width: 85%;
   }
 }
