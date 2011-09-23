@@ -128,7 +128,7 @@ mark {
   background-color: rgba(208, 255, 0, 0.3);
 }
 
-.tape, .people li:before, .location ul:before, .directions a:last-child:before, #details aside:before {
+.tape, .people li:before, .location ul:before, .directions a:last-child:before {
   background: transparent url(/images/people-tape.png) no-repeat left top;
   content: " ";
   display: inline-block;
@@ -1072,28 +1072,31 @@ section > div {
 }
 #details section:first-child {
   margin-top: 1.8em;
+  padding-top: 0;
 }
 #details section p {
   float: right;
+  margin-right: 2%;
   width: 57.2916667%;
 }
 #details aside {
-  background-color: #fff;
+  background-color: #f1f69d;
+  border-top: 12px solid #e9ee9a;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   -o-border-radius: 1px;
   -ms-border-radius: 1px;
   -khtml-border-radius: 1px;
   border-radius: 1px;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  color: #929292;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: #183070;
   float: left;
   font: 1.3em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   margin-left: 2%;
-  padding: 1%;
+  padding: 0 1.8% 1.2% 1.8%;
   -moz-transform: rotate(-1deg);
   -webkit-transform: rotate(-1deg);
   -o-transform: rotate(-1deg);
@@ -1107,5 +1110,14 @@ section > div {
 #details .alt aside {
   float: right;
   margin-left: 0;
-  margin-right: 2%;
+  margin-right: 4%;
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+#about section:first-child {
+  margin-top: 1.8em;
 }
