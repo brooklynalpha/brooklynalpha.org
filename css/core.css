@@ -1136,6 +1136,7 @@ section section h1 {
   }
 }
 .about-hosts .polaroid {
+  margin-bottom: -1.5em;
   margin-left: 2%;
   top: -1.5em;
   -moz-transform: rotate(-1.5deg);
