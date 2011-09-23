@@ -1100,9 +1100,23 @@ section section h1 {
   transform: rotate(2deg);
 }
 
-.sad-extra-div-for-odd-clear-is-sad {
+.thanks-chris-thanks-cameron {
   clear: both;
-  width: 100%;
+  color: #353535;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+  padding: 2% 6%;
+  text-align: left;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 83%;
+}
+.thanks-chris-thanks-cameron:before {
+  left: 48%;
 }
 
 @media screen and (min-width: 570px) {
