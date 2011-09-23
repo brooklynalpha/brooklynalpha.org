@@ -197,11 +197,11 @@ mark {
 }
 
 .postIt, #details aside {
-  background: -webkit-gradient(linear, 50% 0%, 50% 18, color-stop(11.111%, #fcfae2), color-stop(55.556%, #edebc6), color-stop(100%, #fcfae2));
-  background: -webkit-linear-gradient(#fcfae2 2px, #edebc6 10px, #fcfae2 18px);
-  background: -moz-linear-gradient(#fcfae2 2px, #edebc6 10px, #fcfae2 18px);
-  background: -o-linear-gradient(#fcfae2 2px, #edebc6 10px, #fcfae2 18px);
-  background: linear-gradient(#fcfae2 2px, #edebc6 10px, #fcfae2 18px);
+  background: -webkit-gradient(linear, 50% 0%, 50% 28, color-stop(28.571%, #faf8cb), color-stop(57.143%, #fffde7), color-stop(100%, #fcfae2));
+  background: -webkit-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
+  background: -moz-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
+  background: -o-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
+  background: linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   -o-border-radius: 1px;

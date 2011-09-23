@@ -98,7 +98,7 @@ mark {
 }
 
 .postIt {
-	@include background(linear-gradient(#fcfae2 2px, #edebc6 10px, #fcfae2 18px));
+	@include background(linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px));
 	@include border-radius(1px);
 	@include single-box-shadow(rgba(0, 0, 0, 0.15), 0, 3px, 2px);
 	color: #183070;
