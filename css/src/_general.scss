@@ -105,4 +105,8 @@ mark {
 	@include rabiohead(1.3em);
 	padding: 1.4% 1.8% 1.2% 1.8%;
 	@include rotate(-1deg);
+	
+	h1 {
+		@include rabiohead(1.3em);
+	}
 }

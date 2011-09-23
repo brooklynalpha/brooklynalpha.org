@@ -221,6 +221,9 @@ mark {
   -ms-transform: rotate(-1deg);
   transform: rotate(-1deg);
 }
+.postIt h1, #details aside h1 {
+  font: 1.3em/1em "RabioheadRegular", helvetica, arial, sans-serif;
+}
 
 [role='banner'] {
   border-bottom: 6px solid #2e2e2e;
@@ -1109,6 +1112,10 @@ section section h1 {
   }
 }
 
+.about-hosts p {
+  line-height: 1em;
+  margin: 0.5em 0;
+}
 @media screen and (min-width: 570px) {
   .about-hosts {
     float: right;
@@ -1120,6 +1127,6 @@ section section h1 {
   }
   .about-hosts p {
     font-size: 0.9em;
-    width: 100%;
+    width: 90%;
   }
 }

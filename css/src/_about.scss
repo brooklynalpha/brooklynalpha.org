@@ -12,6 +12,11 @@
 
 .about-hosts {
 	
+	p {
+		line-height: 1em;
+		margin: 0.5em 0;
+	}
+	
 	@media screen and (min-width: 570px) {
 		float: right;
 		width: 40.625%;
@@ -23,7 +28,7 @@
 		
 		p {
 			font-size: 0.9em;
-			width: 100%;
+			width: 90%;
 		}
 		
 	}
