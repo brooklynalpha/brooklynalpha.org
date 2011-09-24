@@ -684,6 +684,9 @@ section section h1 {
   }
 }
 
+#home section p {
+  padding-bottom: 0.5em;
+}
 @media screen and (min-width: 630px) {
   #home section p {
     width: 65.625%;
