@@ -649,6 +649,10 @@ section h1 {
 section p {
   font-size: 0.8em;
   line-height: 1.5em;
+  padding-bottom: 1.2em;
+}
+section p:last-child {
+  padding-bottom: 0;
 }
 @media screen and (min-width: 570px) {
   section p {
@@ -1176,6 +1180,7 @@ section section h1 {
   line-height: 1em;
   font-size: 1.1em;
   margin: 0.5em auto 0.7em auto;
+  padding: 0;
   width: 95%;
 }
 .about-hosts .postIt, .about-hosts #details aside, #details .about-hosts aside {

@@ -26,6 +26,11 @@ section {
 	p {
 		font-size: 0.8em;
 		line-height: 1.5em;
+		padding-bottom: 1.2em;
+		
+		&:last-child {
+			padding-bottom: 0;
+		}
 		
 		@media screen and (min-width: 570px) {
 			font-size: 0.9em;
