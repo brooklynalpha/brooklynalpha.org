@@ -67,7 +67,7 @@
 		}
 		
 		a {
-			background: transparent url(/images/register-btn.png) no-repeat center;
+			background: transparent image-url("register-btn.png") no-repeat center;
 			border-bottom: 0;
 			font-size: 2em;		
 			height: 133px;
@@ -97,7 +97,7 @@
 		}
 	
 		&:before {
-			background: transparent url(/images/buildings-large.png) no-repeat 14em -2em;
+			background: transparent image-url("buildings-large.png") no-repeat 14em -2em;
 			@include background-size('90%');
 			content: " ";
 			display: inline-block;

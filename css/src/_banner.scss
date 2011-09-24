@@ -30,7 +30,7 @@
 	}
 	
 	h1 {
-		background: transparent url(/images/branding-small.png) no-repeat left top;
+		background: transparent image-url("branding-small.png") no-repeat left top;
 		@include background-size('100%');
 		padding-top: 18%;
 		text-indent: -300em;
@@ -47,7 +47,7 @@
 }
 
 #home [role='banner'] {
-	background: transparent url(/images/branding-small.png) no-repeat left top;
+	background: transparent image-url("branding-small.png") no-repeat left top;
 	@include background-size('100%');
 	border-bottom: 0;
 	margin: 0;
@@ -63,12 +63,12 @@
 	}
 	
 	@media screen and (min-width: 321px) {
-		background: transparent url(/images/branding-medium.png) no-repeat right top;
+		background: transparent image-url("branding-medium.png") no-repeat right top;
 		@include background-size('100%');
 	}
 	
 	@media screen and (min-width: 481px) {
-		background: transparent url(/images/branding-large.png) no-repeat right top;
+		background: transparent image-url("branding-large.png") no-repeat right top;
 		@include background-size('100%');
 	}
 }

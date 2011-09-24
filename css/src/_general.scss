@@ -1,6 +1,6 @@
 body {
 	background-color: #fcfcfc; 
-	background-image: url(/images/body-bg-grid.gif);
+	background-image: image-url("body-bg-grid.gif");
 	background-repeat: repeat;
 	background-position: 25%;
 	border-top: 8px solid #2e2e2e;
@@ -85,7 +85,7 @@ mark {
 }
 
 .tape {
-	background: transparent url(/images/people-tape.png) no-repeat left top;
+	background: transparent image-url("people-tape.png") no-repeat left top;
 	content: " ";
 	display: inline-block;
 	height: 25px;

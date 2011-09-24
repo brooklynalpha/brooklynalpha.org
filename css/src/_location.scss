@@ -2,7 +2,7 @@
 		
 	@media screen and (min-width: 570px) {
 		& > div {
-			background: transparent url(/images/bg-ghost-01.png) no-repeat right -12px;
+			background: transparent image-url("bg-ghost-01.png") no-repeat right -12px;
 		}
 	}
 }
