@@ -65,6 +65,48 @@
 	}
 }
 
+.directions {
+	
+	ul {
+		clear: both;
+		font-size: 0.9em;
+		margin-top: 0.5em;
+		
+		@media screen and (min-width: 570px) {
+			width: 85%;
+		}
+	}
+	
+	li {
+		list-style: square inside;
+		margin-top: 0.8em;
+	}
+}
+
+.line {
+	@include border-radius(12px);
+	display: inline-block;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	width: 1.5em;
+	
+	&.r {
+		background-color: #fddd00;
+		color: #000;
+	}
+	
+	&.f {
+		background-color: #fc9508;
+		color: #fff;
+	}
+	
+	&.g {
+		background-color: #94c600;
+		color: #fff;
+	}
+}
+
 @-webkit-keyframes slideOne {
 	0%, 15% { opacity: 1; }
 	17%, 97% { opacity: 0; }
