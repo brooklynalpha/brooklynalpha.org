@@ -12,6 +12,10 @@
 	&:before {
 		left: 48%;
 	}
+	
+	@media screen and (min-width: 570px) {
+		margin-bottom: 0;
+	}
 }
 
 .about-new-conference {
@@ -53,7 +57,7 @@
 		
 		&.alt {
 			float: right;
-			margin-right: 4%;
+			margin-right: 2%;
 			top: -2em;
 			@include rotate(1.5deg);
 		}

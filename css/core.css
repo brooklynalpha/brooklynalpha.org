@@ -1118,6 +1118,11 @@ section section h1 {
 .thanks-chris-thanks-cameron:before {
   left: 48%;
 }
+@media screen and (min-width: 570px) {
+  .thanks-chris-thanks-cameron {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 570px) {
   .about-new-conference {
@@ -1163,7 +1168,7 @@ section section h1 {
 }
 .about-hosts .polaroid.alt {
   float: right;
-  margin-right: 4%;
+  margin-right: 2%;
   top: -2em;
   -moz-transform: rotate(1.5deg);
   -webkit-transform: rotate(1.5deg);
