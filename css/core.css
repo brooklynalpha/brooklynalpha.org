@@ -1151,6 +1151,7 @@ section section h1 {
 }
 @media screen and (min-width: 570px) {
   #details aside {
+    clear: none;
     float: left;
     margin-left: 2%;
     width: 23.9583333%;
