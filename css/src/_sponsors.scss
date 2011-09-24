@@ -1,17 +1,28 @@
 .sponsors {
 	
 	ul {
-		width: 90%;
+		
+		width: 100%;
+		
+		@media screen and (min-width: 570px) {
+			width: 90%;	
+		}
 	}
 	
 	li {
 		display: inline-block;
-		margin: 1.2em 2.0416667% 0 0;
+		margin: 1.2em 0 0 0;
+		max-width: 400px;
 		min-width: 270px;
-		width: 31.2916667%;
+		width: 90%;
 		
 		&:nth-child(3n) {
 			margin-right: 0;
+		}
+		
+		@media screen and (min-width: 570px) {
+			margin-right: 2.0416667%;
+			width: 31.2916667%;
 		}
 	}
 	
