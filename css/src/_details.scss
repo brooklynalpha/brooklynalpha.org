@@ -7,16 +7,25 @@
 	}
 		
 	section p {
-		float: right;
-		margin-right: 2%;
-		width: 57.2916667%;
+		
+		@media screen and (min-width: 570px) {
+			float: right;
+			margin-right: 2%;
+			width: 57.2916667%;
+		}
 	}
 	
 	aside {
 		@extend .postIt;
-		float: left;
-		margin-left: 2%;
-		width: 23.9583333%;
+		@include rotate(0deg);
+		clear: both;
+		width: 95%;
+		
+		@media screen and (min-width: 570px) {
+			float: left;
+			margin-left: 2%;
+			width: 23.9583333%;
+		}
 	}
 	
 	.alt {
@@ -25,10 +34,13 @@
 		}
 		
 		aside {
-			float: right;
 			margin-left: 0;
-			margin-right: 4%;
-			@include rotate(2deg);
+			
+			@media screen and (min-width: 570px) {
+				float: right;
+				margin-right: 4%;
+				@include rotate(2deg);
+			}
 		}
 	}
 }

@@ -1121,28 +1121,45 @@ section section h1 {
     background: transparent url(/images/bg-ghost-02.png) no-repeat right -12px;
   }
 }
-#details section p {
-  float: right;
-  margin-right: 2%;
-  width: 57.2916667%;
+@media screen and (min-width: 570px) {
+  #details section p {
+    float: right;
+    margin-right: 2%;
+    width: 57.2916667%;
+  }
 }
 #details aside {
-  float: left;
-  margin-left: 2%;
-  width: 23.9583333%;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  clear: both;
+  width: 95%;
+}
+@media screen and (min-width: 570px) {
+  #details aside {
+    float: left;
+    margin-left: 2%;
+    width: 23.9583333%;
+  }
 }
 #details .alt p {
   float: left;
 }
 #details .alt aside {
-  float: right;
   margin-left: 0;
-  margin-right: 4%;
-  -moz-transform: rotate(2deg);
-  -webkit-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  transform: rotate(2deg);
+}
+@media screen and (min-width: 570px) {
+  #details .alt aside {
+    float: right;
+    margin-right: 4%;
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
 }
 
 .thanks-chris-thanks-cameron {
