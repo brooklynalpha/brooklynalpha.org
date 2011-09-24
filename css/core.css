@@ -817,6 +817,7 @@ section section h1 {
 .sponsors li {
   display: inline-block;
   margin: 1.2em 2.0416667% 0 0;
+  min-width: 270px;
   width: 31.2916667%;
 }
 .sponsors li:nth-child(3n) {
