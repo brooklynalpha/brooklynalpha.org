@@ -126,3 +126,9 @@
 		font-size: 2.75em;
 	}
 }
+
+#details [role='navigation'] a[href*="details"],
+#location [role='navigation'] a[href*="location"],
+#about [role='navigation'] a[href*="about"] {
+	opacity: 0.3;
+}
