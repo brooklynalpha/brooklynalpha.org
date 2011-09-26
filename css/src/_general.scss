@@ -82,6 +82,26 @@ mark {
 			margin-right: 1.95641026%;
 		}
 	}
+	
+	&.full {
+		clear: both;
+		color: #353535;
+		font-size: 1.1em;
+		font-weight: bold;
+		margin: 0 0 1em 1%;
+		padding: 1em 6%;
+		text-align: left;
+		@include rotate(0deg);
+		width: 83%;
+
+		&:before {
+			left: 48%;
+		}
+
+		@media screen and (min-width: 570px) {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .tape {

@@ -19,6 +19,16 @@
 		}
 	}
 	
+	section p.full {
+		float: none;
+		margin: 1.3em 0 0 1%;
+		width: 83%;
+
+		@media screen and (min-width: 570px) {
+			margin-bottom: 0;
+		}
+	}
+	
 	section div {
 		overflow: hidden;
 		padding-bottom: 1em;

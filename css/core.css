@@ -178,6 +178,29 @@ mark {
     margin-right: 1.95641026%;
   }
 }
+.polaroid.full {
+  clear: both;
+  color: #353535;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 1em 1%;
+  padding: 1em 6%;
+  text-align: left;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  width: 83%;
+}
+.polaroid.full:before {
+  left: 48%;
+}
+@media screen and (min-width: 570px) {
+  .polaroid.full {
+    margin-bottom: 0;
+  }
+}
 
 .tape, .polaroid:before, .people li:before {
   background: transparent url('../images/people-tape.png?1316989761') no-repeat left top;
@@ -1151,6 +1174,16 @@ section section h1 {
     width: 57.2916667%;
   }
 }
+#details section p.full {
+  float: none;
+  margin: 1.3em 0 0 1%;
+  width: 83%;
+}
+@media screen and (min-width: 570px) {
+  #details section p.full {
+    margin-bottom: 0;
+  }
+}
 #details section div {
   overflow: hidden;
   padding-bottom: 1em;
@@ -1201,30 +1234,6 @@ section section h1 {
 }
 #details .alt div {
   float: left;
-}
-
-section p.thanks-chris-thanks-cameron {
-  clear: both;
-  color: #353535;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin: 0 0 1em 1%;
-  padding: 1em 6%;
-  text-align: left;
-  -moz-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  width: 83%;
-}
-section p.thanks-chris-thanks-cameron:before {
-  left: 48%;
-}
-@media screen and (min-width: 570px) {
-  section p.thanks-chris-thanks-cameron {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: 570px) {
