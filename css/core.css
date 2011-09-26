@@ -1141,11 +1141,28 @@ section section h1 {
     background: transparent url('../images/bg-ghost-02.png?1316989761') no-repeat right -12px;
   }
 }
+#details [role="main"] > section h1 {
+  margin-bottom: 0.4em;
+}
 @media screen and (min-width: 570px) {
-  #details section p {
+  #details section p, #details section div {
     float: right;
     margin-right: 2%;
     width: 57.2916667%;
+  }
+}
+#details section div {
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+#details section div p {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+}
+@media screen and (min-width: 570px) {
+  #details section div {
+    padding-bottom: 0;
   }
 }
 #details aside {
@@ -1181,6 +1198,9 @@ section section h1 {
     -ms-transform: rotate(2deg);
     transform: rotate(2deg);
   }
+}
+#details .alt div {
+  float: left;
 }
 
 section p.thanks-chris-thanks-cameron {

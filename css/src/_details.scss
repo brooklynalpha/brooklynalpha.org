@@ -2,16 +2,35 @@
 	
 	@media screen and (min-width: 630px) {
 		& > div {
-			background: transparent image-url("bg-ghost-02.png") no-repeat right -12px;
+			background: transparent image-url("bg-ghost-02.png") no-repeat right -12px;			
 		}
 	}
-		
-	section p {
+	
+	[role="main"] > section h1 {
+		margin-bottom: 0.4em;
+	}
+	
+	section p, section div {
 		
 		@media screen and (min-width: 570px) {
 			float: right;
 			margin-right: 2%;
 			width: 57.2916667%;
+		}
+	}
+	
+	section div {
+		overflow: hidden;
+		padding-bottom: 1em;
+		
+		p {
+			float: none;
+			margin-right: 0;
+			width: 100%;
+		}
+		
+		@media screen and (min-width: 570px) {
+			padding-bottom: 0;
 		}
 	}
 	
@@ -43,5 +62,9 @@
 				@include rotate(2deg);
 			}
 		}
+	}
+	
+	.alt div {
+		float: left;
 	}
 }
