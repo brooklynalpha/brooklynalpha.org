@@ -4,7 +4,7 @@ var APP = (function () {
 		showRegMsg = function (e, targetElem) {
 			var elem = $('<p />', {
 				'class': 'registration-closed',
-				text: 'We\'ll open up registration tomorrow, Sept. 26th at 1:00pm EST'
+				text: 'We\'ll open up registration tomorrow, Sept. 27'
 			})
 			
 			if ($('p.registration-closed').length === 0) {
