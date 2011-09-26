@@ -1183,13 +1183,13 @@ section section h1 {
   }
 }
 
-.thanks-chris-thanks-cameron {
+section p.thanks-chris-thanks-cameron {
   clear: both;
   color: #353535;
   font-size: 1.1em;
   font-weight: bold;
-  margin: 2em 0 1em 0;
-  padding: 2% 6%;
+  margin: 0 0 1em 1%;
+  padding: 1em 6%;
   text-align: left;
   -moz-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
@@ -1198,17 +1198,18 @@ section section h1 {
   transform: rotate(0deg);
   width: 83%;
 }
-.thanks-chris-thanks-cameron:before {
+section p.thanks-chris-thanks-cameron:before {
   left: 48%;
 }
 @media screen and (min-width: 570px) {
-  .thanks-chris-thanks-cameron {
+  section p.thanks-chris-thanks-cameron {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 570px) {
   .about-new-conference {
+    clear: left;
     float: left;
     width: 57.2916667%;
   }
