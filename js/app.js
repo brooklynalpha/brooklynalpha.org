@@ -1,6 +1,29 @@
 var APP = (function () {
 	
-	var ret = {};
+	var ret = {},
+		showRegMsg = function (e, targetElem) {
+			var elem = $('<p />', {
+				'class': 'registration-closed',
+				text: 'We\'ll open up registration tomorrow, Sept. 26th at 1:00pm EST'
+			})
+			
+			if ($('p.registration-closed').length === 0) {
+				
+				if (targetElem) {
+					targetElem.before(elem);
+				} else {
+					$('[role=navigation]').prepend(elem);
+				}
+				
+				setTimeout(function () {
+					$('p.registration-closed').fadeOut(100, function () {
+						$(this).remove();
+					});
+				}, 5000);
+			}
+			
+			e.preventDefault();
+		};
 	
 	// Start this bad dude up
 	ret.init = function () {
@@ -12,23 +35,11 @@ var APP = (function () {
 		});
 		
 		$('#conferenceinfo a').click(function (e) {
-			var elem = $('<p />', {
-				'class': 'registration-closed',
-				text: 'We\'ll open up registration tomorrow, Sept. 26th at 1:00pm EST'
-			})
-			
-			if ($('p.registration-closed').length === 0) {
-				$(this).before(elem);
-				
-				setTimeout(function () {
-					$('p.registration-closed').fadeOut(100, function () {
-						$(this).remove();
-					});
-				}, 5000);
-			}
-			
-			e.preventDefault();
+			var targetElem = $(this);
+			showRegMsg(e, targetElem);
 		});
+		
+		$('[role=banner] [role=navigation] a:last').click(showRegMsg);
 	};
 	
 	return ret;

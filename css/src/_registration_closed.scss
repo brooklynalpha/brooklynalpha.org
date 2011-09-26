@@ -1,4 +1,7 @@
 .registration-closed {
+	@include animation-duration(0.2s);
+	@include animation-iteration-count(1);
+	@include animation-name(slideUpRegs);
 	background-color: rgba(255, 255, 255, 0.95);
 	@include border-radius(1px);
 	@include single-box-shadow(rgba(0, 0, 0, 0.25), 0, 1px, 4px);
@@ -11,7 +14,7 @@
 	padding: 0.9em 0;
 	position: absolute;
 	text-align: center;
-	top: 0em;
+	top: 0;
 	width: 85%;
 	z-index: 2;
 	
@@ -28,21 +31,20 @@
 }
 
 #home .registration-closed {
-	font-size: 0.85em;
-	margin-top: 1em;
-	padding: 0.4em 0;
-	top: 50%;
-	width: 100%;
-	
 	@include animation-duration(0.2s);
 	@include animation-iteration-count(1);
 	@include animation-name(slideUp);
+	font-size: 1em;
+	margin-top: 1em;
+	padding: 0.4em 0;
+	top: 45%;
+	width: 100%;
 	
 	@media screen and (min-width: 630px) {
 		@include animation-name(slideUpLarge);
 		left: 54.5916667%;
 		padding: 0.4em 0.3em 0.5em 0.3em;
-		top: -4em;
+		top: -5em;
 		width: 180px;
 	}
 }
@@ -55,7 +57,7 @@
 	
 	100% { 
 		opacity: 1;
-		top: 50%;
+		top: 45%;
 	}
 }
 
@@ -67,6 +69,18 @@
 	
 	100% { 
 		opacity: 1;
-		top: -4em; 
+		top: -5em;
+	}
+}
+
+@-webkit-keyframes slideUpRegs {
+	0% { 
+		opacity: 0;
+		top: 4em; 
+	}
+	
+	100% { 
+		opacity: 1;
+		top: 0; 
 	}
 }
