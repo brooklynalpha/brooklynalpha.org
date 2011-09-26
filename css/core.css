@@ -86,7 +86,7 @@ hr {
 
 body {
   background-color: #fcfcfc;
-  background-image: url('../images/body-bg-grid.gif?1316574175');
+  background-image: url('../images/body-bg-grid.gif?1316989761');
   background-repeat: repeat;
   background-position: 25%;
   border-top: 8px solid #2e2e2e;
@@ -180,7 +180,7 @@ mark {
 }
 
 .tape, .polaroid:before, .people li:before {
-  background: transparent url('../images/people-tape.png?1316574175') no-repeat left top;
+  background: transparent url('../images/people-tape.png?1316989761') no-repeat left top;
   content: " ";
   display: inline-block;
   height: 25px;
@@ -201,7 +201,6 @@ mark {
   background: -webkit-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
   background: -moz-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
   background: -o-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
-  background: -ms-linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
   background: linear-gradient(#faf8cb 8px, #fffde7 16px, #fcfae2 28px);
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -258,7 +257,7 @@ mark {
   }
 }
 [role='banner'] h1 {
-  background: transparent url('../images/branding-small.png?1316669913') no-repeat left top;
+  background: transparent url('../images/branding-small.png?1316989761') no-repeat left top;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -276,7 +275,7 @@ mark {
 }
 
 #home [role='banner'] {
-  background: transparent url('../images/branding-small.png?1316669913') no-repeat left top;
+  background: transparent url('../images/branding-small.png?1316989761') no-repeat left top;
   -moz-background-size: 100%;
   -webkit-background-size: 100%;
   -o-background-size: 100%;
@@ -297,7 +296,7 @@ mark {
 }
 @media screen and (min-width: 321px) {
   #home [role='banner'] {
-    background: transparent url('../images/branding-medium.png?1316669913') no-repeat right top;
+    background: transparent url('../images/branding-medium.png?1316989761') no-repeat right top;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
     -o-background-size: 100%;
@@ -306,7 +305,7 @@ mark {
 }
 @media screen and (min-width: 481px) {
   #home [role='banner'] {
-    background: transparent url('../images/branding-large.png?1316574175') no-repeat right top;
+    background: transparent url('../images/branding-large.png?1316989761') no-repeat right top;
     -moz-background-size: 100%;
     -webkit-background-size: 100%;
     -o-background-size: 100%;
@@ -407,7 +406,7 @@ mark {
     width: 57.2916667%;
   }
   #conferenceinfo a {
-    background: transparent url('../images/register-btn.png?1316574175') no-repeat center;
+    background: transparent url('../images/register-btn.png?1316989761') no-repeat center;
     border-bottom: 0;
     font-size: 2em;
     height: 133px;
@@ -441,7 +440,7 @@ mark {
     margin-top: 0.2em;
   }
   #conferenceinfo:before {
-    background: transparent url('../images/buildings-large.png?1316574175') no-repeat 14em -2em;
+    background: transparent url('../images/buildings-large.png?1316989761') no-repeat 14em -2em;
     -moz-background-size: 90%;
     -webkit-background-size: 90%;
     -o-background-size: 90%;
@@ -483,6 +482,74 @@ mark {
     -o-background-size: 122%;
     background-size: 122%;
     top: -17em;
+  }
+}
+
+.registration-closed {
+  background-color: rgba(255, 255, 255, 0.95);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  color: #000;
+  font-size: 0.85em;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 1em;
+  padding: 0.4em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  -moz-animation-duration: 0.2s;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp;
+}
+@media screen and (min-width: 630px) {
+  .registration-closed {
+    -moz-animation-name: slideUpLarge;
+    -webkit-animation-name: slideUpLarge;
+    animation-name: slideUpLarge;
+    left: 54.5916667%;
+    padding: 0.4em 0.3em 0.5em 0.3em;
+    top: -4em;
+    width: 180px;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    top: 8em;
+  }
+
+  100% {
+    opacity: 1;
+    top: 4em;
+  }
+}
+
+@-webkit-keyframes slideUpLarge {
+  0% {
+    opacity: 0;
+    top: 1em;
+  }
+
+  100% {
+    opacity: 1;
+    top: -4em;
   }
 }
 
@@ -855,7 +922,7 @@ section section h1 {
 
 @media screen and (min-width: 570px) {
   #location > div {
-    background: transparent url('../images/bg-ghost-01.png?1316574175') no-repeat right -12px;
+    background: transparent url('../images/bg-ghost-01.png?1316989761') no-repeat right -12px;
   }
 }
 
@@ -1131,7 +1198,7 @@ section section h1 {
 
 @media screen and (min-width: 630px) {
   #details > div {
-    background: transparent url('../images/bg-ghost-02.png?1316574175') no-repeat right -12px;
+    background: transparent url('../images/bg-ghost-02.png?1316989761') no-repeat right -12px;
   }
 }
 @media screen and (min-width: 570px) {
