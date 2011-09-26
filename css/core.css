@@ -728,7 +728,9 @@ section section h1 {
   font: 1.6em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   margin: 0 auto;
   padding: 0.5em 0 1.6em 0;
+  position: relative;
   width: 90%;
+  z-index: 5;
 }
 @media screen and (min-width: 630px) {
   [role="contentinfo"] {
