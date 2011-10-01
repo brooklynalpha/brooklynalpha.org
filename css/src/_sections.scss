@@ -24,17 +24,23 @@ section {
 	}
 	
 	p {
-		font-size: 0.8em;
-		line-height: 1.5em;
+		font-size: 0.9em;
+		line-height: 1.55em;
 		padding-bottom: 1.2em;
+		@include transition-duration(0.2s);
+		@include transition-property(font-size);
 		
 		&:last-child {
 			padding-bottom: 0;
 		}
 		
 		@media screen and (min-width: 570px) {
-			font-size: 0.9em;
+			font-size: 1em;
 			width: 90%;
+		}
+		
+		@media screen and (min-width: 1040px) {
+			font-size: 1.1em;
 		}
 	}
 	
