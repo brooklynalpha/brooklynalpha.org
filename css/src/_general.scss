@@ -1,5 +1,5 @@
 body {
-	background-color: #fcfcfc; 
+	background-color: #fcfcfc;
 	background-image: image-url("body-bg-grid.gif");
 	background-repeat: repeat;
 	background-position: 25%;
@@ -13,6 +13,22 @@ body {
 	}
 }
 
+#details {
+	@media screen and (min-width: 630px) {
+		background-image: image-url("bg-ghost-02.png"), image-url("body-bg-grid.gif");
+		background-repeat: no-repeat, repeat;
+		background-position: right -12px, 25%;
+	}
+}
+
+#location {
+	@media screen and (min-width: 630px) {
+		background-image: image-url("bg-ghost-01.png"), image-url("body-bg-grid.gif");
+		background-repeat: no-repeat, repeat;
+		background-position: right 5px, 25%;
+	}
+}
+
 ::selection {
 	background-color: #d2ff00;
 	color: #000;
@@ -20,11 +36,16 @@ body {
 
 body > div {
 	float: right;
-	max-width: 1280px;
+	max-width: 1152px;
 	width: 100%;
 	
 	@media screen and (min-width: 630px) {
 		width: 94%;
+	}
+	
+	@media screen and (min-width: 1228px) {
+		float: none;
+		margin: 0 auto;
 	}
 }
 

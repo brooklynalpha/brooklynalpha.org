@@ -1,11 +1,5 @@
 #details {
 	
-	@media screen and (min-width: 630px) {
-		& > div {
-			background: transparent image-url("bg-ghost-02.png") no-repeat right -12px;			
-		}
-	}
-	
 	[role="main"] > section h1 {
 		margin-bottom: 0.4em;
 	}
