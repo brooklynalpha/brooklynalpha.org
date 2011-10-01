@@ -46,8 +46,9 @@
 	
 	aside {
 		@extend .postIt;
-		@include rotate(0deg);
 		clear: both;
+		font-size: 1.45em;
+		@include rotate(0deg);
 		width: 95%;
 		
 		@media screen and (min-width: 570px) {

@@ -678,17 +678,30 @@ section h1 {
   }
 }
 section p {
-  font-size: 0.8em;
-  line-height: 1.5em;
+  font-size: 0.9em;
+  line-height: 1.55em;
   padding-bottom: 1.2em;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-property: font-size;
+  -webkit-transition-property: font-size;
+  -o-transition-property: font-size;
+  transition-property: font-size;
 }
 section p:last-child {
   padding-bottom: 0;
 }
 @media screen and (min-width: 570px) {
   section p {
-    font-size: 0.9em;
+    font-size: 1em;
     width: 90%;
+  }
+}
+@media screen and (min-width: 1040px) {
+  section p {
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 570px) {
@@ -1201,12 +1214,13 @@ section section h1 {
   }
 }
 #details aside {
+  clear: both;
+  font-size: 1.45em;
   -moz-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  clear: both;
   width: 95%;
 }
 @media screen and (min-width: 570px) {
