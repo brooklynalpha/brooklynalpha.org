@@ -100,6 +100,22 @@ body {
   }
 }
 
+@media screen and (min-width: 630px) {
+  #details {
+    background-image: url('../images/bg-ghost-02.png?1316989761'), url('../images/body-bg-grid.gif?1316989761');
+    background-repeat: no-repeat, repeat;
+    background-position: right -12px, 25%;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  #location {
+    background-image: url('../images/bg-ghost-01.png?1316989761'), url('../images/body-bg-grid.gif?1316989761');
+    background-repeat: no-repeat, repeat;
+    background-position: right 5px, 25%;
+  }
+}
+
 ::selection {
   background-color: #d2ff00;
   color: #000;
@@ -107,12 +123,18 @@ body {
 
 body > div {
   float: right;
-  max-width: 1280px;
+  max-width: 1152px;
   width: 100%;
 }
 @media screen and (min-width: 630px) {
   body > div {
     width: 94%;
+  }
+}
+@media screen and (min-width: 1228px) {
+  body > div {
+    float: none;
+    margin: 0 auto;
   }
 }
 
@@ -898,12 +920,6 @@ section section h1 {
   width: 99.3548387%;
 }
 
-@media screen and (min-width: 570px) {
-  #location > div {
-    background: transparent url('../images/bg-ghost-01.png?1316989761') no-repeat right -12px;
-  }
-}
-
 .location h2 {
   font: 1.45em/1em "RabioheadRegular", helvetica, arial, sans-serif;
   margin: -0.4em 0 0.4em 0;
@@ -1174,11 +1190,6 @@ section section h1 {
   }
 }
 
-@media screen and (min-width: 630px) {
-  #details > div {
-    background: transparent url('../images/bg-ghost-02.png?1316989761') no-repeat right -12px;
-  }
-}
 #details [role="main"] > section h1 {
   margin-bottom: 0.4em;
 }
