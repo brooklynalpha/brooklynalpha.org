@@ -69,7 +69,7 @@
 		margin: 3% 2% 3% 3%;
 	}
 	
-	img + a {
+	a + a {
 		display: inline-block;
 		float: left;
 		@include rabiohead(1.6em);
