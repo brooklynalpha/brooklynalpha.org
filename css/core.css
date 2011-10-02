@@ -871,7 +871,7 @@ section section h1 {
   float: left;
   margin: 3% 2% 3% 3%;
 }
-.people img + a {
+.people a + a {
   display: inline-block;
   float: left;
   font: 1.6em/1em "RabioheadRegular", helvetica, arial, sans-serif;
