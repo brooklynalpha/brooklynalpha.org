@@ -38,6 +38,17 @@
 		}
 	}
 	
+	.sponsors {
+		p {
+			float: none;
+			margin-right: 0;
+			
+			@media screen and (min-width: 570px) {
+				width: 90%;
+			}
+		}
+	}
+	
 	aside {
 		@extend .postIt;
 		clear: both;

@@ -1250,6 +1250,15 @@ section section h1 {
     padding-bottom: 0;
   }
 }
+#details .sponsors p {
+  float: none;
+  margin-right: 0;
+}
+@media screen and (min-width: 570px) {
+  #details .sponsors p {
+    width: 90%;
+  }
+}
 #details aside {
   clear: both;
   font-size: 1.45em;
