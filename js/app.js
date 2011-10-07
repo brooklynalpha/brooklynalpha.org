@@ -34,12 +34,6 @@ var APP = (function () {
 			'minFontSize': '19'
 		});
 		
-		$('#conferenceinfo a').click(function (e) {
-			var targetElem = $(this);
-			showRegMsg(e, targetElem);
-		});
-		
-		$('[role=banner] [role=navigation] a:last').click(showRegMsg);
 	};
 	
 	return ret;
