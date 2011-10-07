@@ -880,6 +880,7 @@ section section h1 {
 }
 
 .sponsors ul {
+  margin-left: 1em;
   width: 100%;
 }
 @media screen and (min-width: 570px) {
@@ -893,10 +894,11 @@ section section h1 {
   margin: 1.2em 0 0 0;
   max-width: 400px;
   min-width: 240px;
+  position: relative;
   width: 90%;
 }
 .sponsors li:hover {
-  background-color: #d2ff00;
+  background-color: #e9cd3e;
 }
 .sponsors li:nth-child(3n) {
   margin-right: 0;
@@ -907,9 +909,37 @@ section section h1 {
     width: 32.2916667%;
   }
 }
+.sponsors b {
+  background-color: #e9cd3e;
+  border: 1px solid #e1c223;
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -o-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -khtml-border-radius: 2em;
+  border-radius: 2em;
+  box-shadow: inset rgba(255, 255, 255, 0.8) 1px 1px 0px, rgba(0, 0, 0, 0.2) 1px 1px 1px;
+  color: #1f1f1f;
+  font-size: 0.6em;
+  left: -1em;
+  letter-spacing: -0.15em;
+  padding: 1.3em 0.6em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: -1em;
+  -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
 .sponsors a {
   display: block;
   padding: 0.4em;
+}
+.sponsors a:hover {
+  text-decoration: none;
 }
 .sponsors img {
   display: block;

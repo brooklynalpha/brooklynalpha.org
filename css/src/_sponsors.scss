@@ -1,9 +1,11 @@
 .sponsors {
 	
 	ul {
+		margin-left: 1em;
 		width: 100%;
 		
 		@media screen and (min-width: 570px) {
+			
 			width: 95%;
 		}
 	}
@@ -14,10 +16,11 @@
 		margin: 1.2em 0 0 0;
 		max-width: 400px;
 		min-width: 240px;
+		position: relative;
 		width: 90%;
 		
 		&:hover {
-			background-color: #d2ff00;
+			background-color: #e9cd3e;
 		}
 		
 		&:nth-child(3n) {
@@ -30,9 +33,30 @@
 		}
 	}
 	
+	b {
+		background-color: #e9cd3e;
+		border: 1px solid #e1c223;
+		@include border-radius(2em);
+		box-shadow: inset rgba(255, 255, 255, 0.8) 1px 1px 0px, rgba(0, 0, 0, 0.2) 1px 1px 1px;
+		color: #1f1f1f;
+		font-size: 0.6em;
+		left: -1em;
+		letter-spacing: -0.15em;
+		padding: 1.3em 0.6em;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		top: -1em;
+		@include rotate(-15deg);
+	}
+	
 	a {
 		display: block;
 		padding: 0.4em;
+		
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	
 	img {
