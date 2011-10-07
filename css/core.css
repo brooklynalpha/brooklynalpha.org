@@ -884,40 +884,36 @@ section section h1 {
 }
 @media screen and (min-width: 570px) {
   .sponsors ul {
-    width: 90%;
+    width: 95%;
   }
 }
 .sponsors li {
+  background-color: #e1e1e1;
   display: inline-block;
   margin: 1.2em 0 0 0;
   max-width: 400px;
-  min-width: 270px;
+  min-width: 240px;
   width: 90%;
+}
+.sponsors li:hover {
+  background-color: #d2ff00;
 }
 .sponsors li:nth-child(3n) {
   margin-right: 0;
 }
 @media screen and (min-width: 570px) {
   .sponsors li {
-    margin-right: 2.0416667%;
-    width: 31.2916667%;
+    margin-right: 1.0416667%;
+    width: 32.2916667%;
   }
 }
 .sponsors a {
-  border: 4px solid #e1e1e1;
   display: block;
-  width: 97.4193548%;
-}
-.sponsors a:hover {
-  border-color: #d2ff00;
-}
-.sponsors a:hover img {
-  border-color: #ababab;
+  padding: 0.4em;
 }
 .sponsors img {
-  border: 1px solid #c7c7c7;
   display: block;
-  width: 99.3548387%;
+  width: 100%;
 }
 
 .location h2 {
