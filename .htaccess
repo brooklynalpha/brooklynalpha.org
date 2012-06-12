@@ -6,3 +6,8 @@ RewriteRule ^.*$ - [NC,L]
 
 RewriteRule ^([A-Za-z0-9]+)$ /2012/$1.html [L]
 
+ErrorDocument 400 /2012/_error.html
+ErrorDocument 401 /2012/_error.html
+ErrorDocument 402 /2012/_error.html
+ErrorDocument 403 /2012/_error.html
+ErrorDocument 404 /2012/_error.html
