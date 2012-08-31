@@ -1,47 +1,6 @@
 [role="banner"] {
-    @include background(radial-gradient(rgba(255, 255, 255, 0.2) 1%, transparent 10%) 25% 27%);
-    background-color: #1d2023;
-    @include background-size(20px 20px);
-    border-bottom: 8px solid #050505;
+    background-color: #fafafa;
     color: #f1f1f1;
-    padding: 1.8em 0 2.4em 0; 
+    padding-top: 0.6em;
     text-align: center;
-
-    h1, h2, h3 {
-        margin: 0 auto;
-        width: 93%;
-    }
-
-    h1 {
-        max-width: 302px;
-
-        img {
-            display: block;
-            height: auto;
-            width: 100%;
-        }
-    }
-
-    h2 {
-        border-top: 1px dashed #343739;
-        border-bottom: 1px dashed #343739;
-        @include slabSerif;
-        font-size: 1.8em;
-        margin: 0.3em auto 0.8em auto;
-        max-width: 657px;
-        padding: 0.3em 0 0.4em 0;
-    }
-
-    h3 {
-        color: #68b081;
-        font-size: 1.1em;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        width: 80%;
-
-        &:before,
-        &:after {
-            content: " • ";
-        }
-    }
 }

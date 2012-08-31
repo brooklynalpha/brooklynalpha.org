@@ -1,0 +1,31 @@
+.nav-main {
+    border-top: 1px solid lighten(#ccc, 15%);
+    margin-top: 0.5em;
+
+    a {
+        color: #03080f;
+        display: block;
+        letter-spacing: 0.1em;
+        padding: 0.6em 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:hover {
+            background-color: darken(#fff, 5%);
+            color: blue;
+        }
+    }
+
+    li:last-child {
+        a {
+            background-color: #68b081;
+            color: #f1f1f1;
+            font-weight: 600;
+
+            &:hover {
+                background-color: darken(#68b081, 5%);
+            }
+        }
+    }
+}

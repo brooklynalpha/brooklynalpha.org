@@ -1,0 +1,29 @@
+.hero {
+    background: #232b38;
+    color: #fff;
+    padding: 1.2em 0;
+    text-align: center;
+
+    h1 {
+        @include slabSerif;
+        font-size: 2em;
+        line-height: 1.2;
+    }
+
+    h2 {
+        background-color: #68b081;
+        display: inline-block;
+        font-size: 1.2em;
+        font-style: italic;
+        letter-spacing: 0.2em;
+        margin-top: 0.5em;
+        text-transform: uppercase;
+        @include skewX(-20deg);
+
+        span {
+            display: block;
+            padding: 0 0.2em;
+            @include skewX(20deg);
+        }
+    }
+}
