@@ -28,4 +28,26 @@
             }
         }
     }
+
+    @media screen and (min-width: 630px) {
+        border-top: 0;
+        display: inline-block;
+        float: right;
+        margin-top: 0;
+
+        li {
+            float: left;
+            margin-left: 0.9em;
+        }
+
+        a {
+            display: inline-block;
+            padding: 1.4em 0.8em 1.3em 0.8em;
+            width: auto;
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
 }
