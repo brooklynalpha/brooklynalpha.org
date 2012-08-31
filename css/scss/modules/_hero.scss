@@ -4,8 +4,21 @@
     }
 }
 
+@mixin details-hero {
+    .page-details & {
+        @content;
+    }
+}
+
+@mixin location-hero {
+    .page-location & {
+        @content;
+    }
+}
+
 .hero {
-    background: #232b38;
+    background: #232b38 image-url("hero-bg-01.png") no-repeat center 30%;
+    @include background-size("200%");
     color: #fff;
     padding: 1.2em 1em 1.4em 1em;
     text-align: center;
@@ -35,7 +48,16 @@
         }
     }
 
+    @include details-hero {
+        background-image: image-url("hero-bg-02.png");
+    }
+
+    @include location-hero {
+        background-image: image-url("hero-bg-03.png");
+    }
+
     @media screen and (min-width: 630px) {
+        @include background-size("120%");
         padding: 2em 1em 2.2em 1em;
 
         h1 {
@@ -54,5 +76,9 @@
                 font-size: 1.8em;
             }
         }
+    }
+
+    @media screen and (min-width: 1000px) {
+        @include background-size("100%");
     }
 }
