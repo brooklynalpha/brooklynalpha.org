@@ -1,7 +1,7 @@
 .hero {
     background: #232b38;
     color: #fff;
-    padding: 1.2em 0;
+    padding: 1.2em 0 1.4em 0;
     text-align: center;
 
     h1 {
@@ -18,12 +18,12 @@
         letter-spacing: 0.2em;
         margin-top: 0.5em;
         text-transform: uppercase;
-        @include skewX(-20deg);
+        @include skewX(-15deg);
 
         span {
             display: block;
             padding: 0 0.2em;
-            @include skewX(20deg);
+            @include skewX(15deg);
         }
     }
 }
