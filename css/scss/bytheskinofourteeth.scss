@@ -3,6 +3,8 @@
 @import "modules/reset";
 @import "modules/font-stacks";
 
+$maxWidth: 992px;
+
 @import "modules/general";
 @import "modules/banner";
 @import "modules/nav-main";

@@ -28,7 +28,13 @@
         font-size: 2em;
         line-height: 1.2;
         margin: 0 auto;
-        max-width: 1080px;
+        max-width: $maxWidth;
+    }
+
+    p {
+        font-size: 1.2em;
+        margin: 0 auto;
+        width: 60%;
     }
 
     h2 {
@@ -73,7 +79,7 @@
             }
 
             h2 {
-                font-size: 1.8em;
+                font-size: 1.6em;
             }
         }
     }
