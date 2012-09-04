@@ -36,6 +36,11 @@
         }
     }
 
+    sup {
+        font-size: 0.6em;
+        vertical-align: super;
+    }
+
     @media screen and (min-width: 630px) {
         section {
             padding: 1.3em 0 1.6em 0;
