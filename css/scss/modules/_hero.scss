@@ -55,8 +55,10 @@
         text-transform: uppercase;
 
         sup {
+            display: inline-block;
             font-size: 0.6em;
-            vertical-align: super;
+            top: -0.4em;
+            position: relative;
         }
 
         span {
