@@ -46,15 +46,18 @@
         display: inline-block;
         font-size: 1.2em;
         font-style: italic;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
         margin-top: 1em;
         text-transform: uppercase;
-        @include skewX(-15deg);
+
+        sup {
+            font-size: 0.6em;
+            vertical-align: super;
+        }
 
         span {
             display: block;
             padding: 0 0.2em;
-            @include skewX(15deg);
         }
     }
 
