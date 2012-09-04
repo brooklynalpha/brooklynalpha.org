@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: $maxWidth;
     padding-top: 1.6em;
-    width: 95%;
+    width: 90%;
 
     h1 {
         background-color: #1f2530;
@@ -21,20 +21,36 @@
     section {
         line-height: 1.35;
         overflow: hidden;
-        padding: 1.3em 0 1.6em 0;
-        text-align: right;
+        padding: 0em 0 2.5em 0;
+        text-align: left;
 
         & > div {
-            float: left;
-            width: calc-percent(435, 992);
+            margin-bottom: 1.4em;
         }
 
         img {
             box-shadow: -3px 3px 0 darken(#f6f6f6, 5%);
             display: block;
-            float: right;
             height: auto;
-            width: calc-percent(507, 992);
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 630px) {
+        section {
+            padding: 1.3em 0 1.6em 0;
+            text-align: right;
+
+            & > div {
+                float: left;
+                margin-bottom: 0;
+                width: calc-percent(435, 992);
+            }
+
+            img {
+                float: right;
+                width: calc-percent(507, 992);
+            }
         }
     }
 }
