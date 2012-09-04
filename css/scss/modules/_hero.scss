@@ -17,8 +17,12 @@
 }
 
 .hero {
-    background: #232b38 image-url("hero-bg-01.png") no-repeat center 30%;
-    @include background-size("200%");
+    background-color: #3c434e;
+    background-image: image-url("hero-bg-tile.png"),
+        image-url("hero-bg-01.png");
+    background-repeat: repeat, no-repeat;
+    background-position: 30% 30%, center 30%;
+    @include background-size(auto, 200% auto);
     color: #fff;
     padding: 1.2em 1em 1.4em 1em;
     text-align: center;
@@ -62,15 +66,17 @@
     }
 
     @include details-hero {
-        background-image: image-url("hero-bg-02.png");
+        background-image: image-url("hero-bg-tile.png"),
+            image-url("hero-bg-02.png");
     }
 
     @include location-hero {
-        background-image: image-url("hero-bg-03.png");
+        background-image: image-url("hero-bg-tile.png"),
+            image-url("hero-bg-03.png");
     }
 
     @media screen and (min-width: 630px) {
-        @include background-size("120%");
+        @include background-size(auto, 120% auto);
         padding: 2em 1em 2.2em 1em;
 
         h1 {
@@ -82,7 +88,7 @@
         }
 
         @include home-hero {
-            @include background-size("180%");
+            @include background-size(auto, 180% auto);
             padding: 3em 1em 3.2em 1em;
 
             h1 {
@@ -97,11 +103,11 @@
 
     @media screen and (min-width: 960px) {
         @include home-hero {
-            @include background-size("120%");
+            @include background-size(auto, 100% auto);
         }
     }
 
     @media screen and (min-width: 1000px) {
-        @include background-size("100%");
+        @include background-size(auto, 100% auto);
     }
 }
