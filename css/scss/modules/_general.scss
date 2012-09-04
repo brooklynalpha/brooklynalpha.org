@@ -5,6 +5,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: blue;
+
+    &:hover {
+        background-color: rgba(lightblue, 0.5);
+    }
+}
+
 ::selection {
     background-color: #68b081;
     color: #f1f1f1;

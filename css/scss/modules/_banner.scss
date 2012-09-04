@@ -6,6 +6,12 @@
     padding-top: 0.8em;
     text-align: center;
 
+    h1 a {
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
     @media screen and (min-width: 630px) {
         margin: 0 auto;
         padding-top: 0;

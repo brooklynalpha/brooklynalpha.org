@@ -1,0 +1,37 @@
+// Subway lines
+.subway-lines {
+    border-top: 1px solid darken(#f6f6f6, 5%);
+    margin-top: 1.2em;
+    padding-top: 0.8em;
+
+    li {
+        margin: 0.5em 0;
+    }
+}
+
+.line {
+    border-radius: 1em;
+    display: inline-block;
+    font-family: helvetica, sans-serif;
+    font-size: 0.8em;
+    height: 1.4em;
+    text-align: center;
+    width: 1.4em;
+}
+
+.r {
+    background-color: #fddd00;
+    color: #000;
+}
+
+.f, .g {
+    color: #fff;
+}
+
+.f {
+    background-color: #FC9508;
+}
+
+.g {
+    background-color: #94C600;
+}

@@ -3,6 +3,10 @@
 @import "modules/reset";
 @import "modules/font-stacks";
 
+@function calc-percent($target, $context) {
+    @return ($target / $context) * 100%;
+}
+
 $maxWidth: 992px;
 
 @import "modules/general";
@@ -12,3 +16,4 @@ $maxWidth: 992px;
 
 @import "modules/hero";
 @import "modules/main";
+@import "modules/location";
