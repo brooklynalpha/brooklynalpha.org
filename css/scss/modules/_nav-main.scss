@@ -18,6 +18,29 @@
     }
 
     li:last-child {
+        position: relative;
+
+        p {
+            background-color: #202632;
+            @include box-sizing("border-box");
+            font-size: 0.75em;
+            height: 100%;
+            line-height: 1.2;
+            opacity: 1;
+            padding: 0.6em 0.5em 0 0.5em;
+            position: absolute;
+            top: 0;
+            @include transition-property("top");
+            @include transition-duration("0.1s");
+            right: 0;
+            width: 100%;
+            z-index: 1;
+
+            &.hidden {
+                top: 50em;
+            }
+        }
+
         a {
             background-color: #68b081;
             color: #f1f1f1;

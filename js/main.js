@@ -1,20 +1,13 @@
 (function () {
-    var highDpi = window.getComputedStyle(document.body, ':after')
-        .getPropertyValue('content')
-        // Doing this for IE9. When it gets the string, it
-        // includes " and ". Weird. Dumb.
-        .replace(/\"/g, '') || null;
+    $('#nav-registration').click(function (e) {
+        e.preventDefault();
 
-    if (highDpi !== null) {
-        var imgsToReplace = document.getElementsByClassName('has-high-dpi');
+        var el = $(this).parent().find('p');
 
-        for (var i = 0; i < imgsToReplace.length; i += 1) {
-            var img = imgsToReplace[i],
-                src = img.getAttribute('src'),
-                ext = src.substring(src.lastIndexOf('.')),
-                highDpiSrc = src.replace(ext, '@2x' + ext);
+        el.removeClass('hidden');
 
-            img.setAttribute('src', highDpiSrc);
-        }
-    }
+        setTimeout(function () {
+            el.addClass('hidden');
+        }, 8000);
+    });
 }());
