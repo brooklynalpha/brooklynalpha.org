@@ -53,8 +53,9 @@
     }
 
     @media screen and (min-width: 630px) {
+        border-right: 1px solid darken(#f6f6f6, 5%);
         margin-top: 10%;
-        padding-right: calc-percent(32, 435);
+        padding: 0.5em calc-percent(30, 435) 0.5em 0;
         text-align: right;
         width: calc-percent(360, 992);
     }
