@@ -26,6 +26,7 @@
     h1 {
         @include slabSerif;
         font-size: 2em;
+        font-weight: 400;
         line-height: 1.2;
         margin: 0 auto;
         max-width: $maxWidth;
