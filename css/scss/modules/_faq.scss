@@ -1,0 +1,27 @@
+.page-faq [role="main"] {
+    section {
+        line-height: 1.35;
+    }
+
+    dl {
+        font-size: 1.3em;
+        margin: 0 auto;
+        max-width: 35em;
+    }
+
+    dt {
+        font-weight: 600;
+    }
+
+    dd {
+        font-size: 0.8em;
+        margin-bottom: 2.5em;
+    }
+
+    @media screen and (min-width: 630px) {
+        section {
+            padding: 1.3em 0 1.6em 0;
+            text-align: left;
+        }
+    }
+}

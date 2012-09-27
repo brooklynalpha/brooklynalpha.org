@@ -14,16 +14,6 @@
     }
 }
 
-.faq {
-    li {
-        margin-bottom: 1.4em;
-    }
-
-    b {
-        display: block;
-    }
-}
-
 .three-things {
     color: #68b081;
     @include box-sizing("border-box");

@@ -76,7 +76,8 @@
 }
 
 .page-details [href*="details"],
-.page-location [href*="location"] {
+.page-location [href*="location"],
+.page-faq [href*="faq"] {
     background-color: darken(#fff, 5%);
     color: blue;
 
