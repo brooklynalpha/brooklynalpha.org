@@ -16,6 +16,10 @@
     dd {
         font-size: 0.8em;
         margin-bottom: 2.5em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     @media screen and (min-width: 630px) {

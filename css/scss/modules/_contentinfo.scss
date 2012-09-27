@@ -1,7 +1,36 @@
 [role="contentinfo"] {
     border-top: 1px solid darken(#f6f6f6, 5%);
     margin: 1em auto 0 auto;
-    padding: 1.8em 0;
+    max-width: $maxWidth;
+    overflow: hidden;
+    padding: 1.8em 0.6em 1em 0.6em;
     text-align: center;
     width: 95%;
+
+    p {
+        line-height: 1.2;
+        margin: 0 auto;
+        padding-bottom: 1em;
+        width: 80%;
+    }
+
+    .archive {
+        font-size: 0.8em;
+    }
+
+    @media screen and (min-width: 600px) {
+        text-align: left;
+
+        p {
+            display: inline-block;
+            float: left;
+            width: 70%;
+        }
+
+        .archive {
+            float: right;
+            text-align: right;
+            width: 10%;
+        }
+    }
 }
