@@ -1,0 +1,17 @@
+.page-announcement {
+    [role="banner"],
+    [role="contentinfo"],
+    [role="main"] {
+        max-width: 800px;
+    }
+
+    [role="main"] {
+        p {
+            font-size: 1.1em;
+            line-height: 1.35;
+            overflow: hidden;
+            padding: 0 0 1em 0;
+            text-align: left;
+        }
+    }
+}
